@@ -1,0 +1,46 @@
+.about-section {
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-img {
+    height: 350px;
+    background-image: url("../media/IMG_20221019_003152_856.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.see-more-btn {
+    background-color: #EFC318;
+    border: 3px black solid;
+}
+
+.see-more-btn:hover {
+    background-color: #252525;
+    color: white;
+}
+
+.events-section {
+    height: 100px;
+}
+
+.title {
+    color: #EFC318;
+}
+
+/* .structure-img {
+    height: 400px;
+    background-image: url("../media/IMG_20221019_003152_856.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #F1F1F1;
+} */
