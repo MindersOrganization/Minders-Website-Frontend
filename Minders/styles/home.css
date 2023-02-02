@@ -1,13 +1,16 @@
 .about-section {
     background-color: #F1F1F1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .about-info {
     display: flex;
     justify-content: space-around;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-img {
@@ -21,6 +24,7 @@
 .see-more-btn {
     background-color: #EFC318;
     border: 3px black solid;
+    width: fit-content;
 }
 
 .see-more-btn:hover {
@@ -36,11 +40,26 @@
     color: #EFC318;
 }
 
-/* .structure-img {
-    height: 400px;
-    background-image: url("../media/IMG_20221019_003152_856.jpg");
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.structure-img-container {
+    background-color: #F1F1F1;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.structure-img {
+    height: 550px;
+    background-image: url("../media/Structure.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #F1F1F1;
-} */
+}

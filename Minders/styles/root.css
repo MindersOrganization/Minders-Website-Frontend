@@ -11,7 +11,7 @@ body{
     background-color: #252525;
 }
 
-.footer-list-title, .nav-link, h1 {
+.footer-list-title, .nav-link, h1, h2 {
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -134,4 +134,8 @@ footer {
 
 .linkedin-icon {
     background-image: url("../media/linkedin-3-512.png");
+}
+
+h1 {
+    font-size: 48px;
 }
