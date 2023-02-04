@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#legacy-title{
+    color: var(--minders-yellow);
+    font-size: clamp(5rem, 13vw + 1rem , 10rem);
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-section{
+    /* background-color: black; */
+    min-height: 100vh;
+    width: 100%;
+    padding: 100px 15px;
+    position: relative;
+}
+
+.timeline-container{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+}
+
+.timeline-container::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 110%;
+    background-color: white;
+    left: 50%;
+    top: -5%;
+}
+
+.timeline-item{
+    /* background-color: grey; */
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin: 25px 0;
+}
+
+.item-card{
+    background-color: var(--minders-yellow);
+    width: clamp(12rem, 40% + 1rem , 50rem);
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.item-card a{
+    text-align: center;
+    padding: 10%;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3rem, 10vw + 1rem , 6rem);
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+
+.timeline-item:nth-child(even){
+    justify-content: right;
+}
+
+.item-dot{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: calc(50% - 15px);
+    top:50%;
+}
+
+.item-line{
+    width: 10%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top:calc(50% + 11.5px);
+    z-index: -1;
+}
+
+.timeline-item:nth-child(odd) .item-line{
+    left: 40%;
+}
+
+.timeline-item:nth-child(even) .item-line{
+    left: 50%;
+}
+
+.timeline-start-circle, .timeline-end-circle{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 22px);
+}
+
+.timeline-start-circle{
+    top: -0.5%;
+}
+
+.timeline-end-circle{
+    bottom: -0.5%;
+}

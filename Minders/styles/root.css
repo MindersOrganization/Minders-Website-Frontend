@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+:root{
+    --minders-yellow: #EFC318;
+    --minders-black: #252525;
+}
 
 * {
     margin: 0;
@@ -8,7 +12,7 @@
 }
 
 body{
-    background-color: #252525;
+    background-color: var(--minders-black);
 }
 
 .footer-list-title, .nav-link, h1, h2 {
@@ -19,6 +23,7 @@ body{
     background-color: black !important;
     position: sticky;
     top: 0;
+    z-index: 9999;
 }
 
 .navbar-nav {
@@ -28,8 +33,12 @@ body{
     height: 50px;
 }
 
+
 .navbar-logo {
     width: 70px;
+}
+.nav-item{
+    width: 90px;
 }
 
 .navbar-logo-container {
@@ -50,8 +59,9 @@ body{
 }
 
 .nav-link:hover {
-    color: #EFC318;
+    color: var(--minders-yellow);
 }
+
 
 footer {
     background-color: black;
@@ -72,7 +82,7 @@ footer {
 }
 
 .footer-list-title {
-    color: #EFC318;
+    color: var(--minders-yellow);
     font-size: x-large;
 
 }
