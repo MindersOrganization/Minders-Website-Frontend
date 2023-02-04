@@ -4,6 +4,7 @@
 
 .about-info {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-around;
 }
 
@@ -48,7 +49,7 @@
 
 .structure-img-container {
     background-color: #F1F1F1;
-    height: 620px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,10 +57,22 @@
 }
 
 .structure-img {
-    height: 550px;
+    height: 40vw;
+    margin: 3%;
     background-image: url("../media/Structure.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #F1F1F1;
+}
+
+@media screen and (max-width: 600px) {
+    .about-info {
+        flex-direction: column;
+    }
+
+    .about-text {
+        align-items: center;
+        padding: 0px !important;
+    }
 }

@@ -25,9 +25,25 @@ p {
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
+    border-radius: 15px;
 }
 
 .about-text {
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+    .about-info {
+        background-image: none;
+        width: 100%;
+    }
+
+    .about-text {
+        padding: 0 !important;
+    }
+
+    .title {
+        text-align: center;
+    }
 }
