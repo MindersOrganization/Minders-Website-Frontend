@@ -3,6 +3,7 @@
 :root{
     --minders-yellow: #EFC318;
     --minders-black: #252525;
+    --minders-white: #F1F1F1;
 }
 
 * {
@@ -13,6 +14,12 @@
 
 body{
     background-color: var(--minders-black);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-list-title, .nav-link, h1, h2 {
