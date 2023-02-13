@@ -4,11 +4,18 @@
     --minders-yellow: #EFC318;
     --minders-black: #252525;
     --minders-white: #F1F1F1;
+    --finished-dark: #FF0000;
+    --finished-light: #FFA6A6;
+    --ongoing-dark: #05FF00;
+    --ongoing-light: #B2FFA6;
+    --to-be-done-dark: #FFF500;
+    --to-be-done-light: #FDFF8A;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 

@@ -1,5 +1,5 @@
 h1, h2 {
-    color: #EFC318;
+    color: var(--minders-yellow);
 }
 
 p {
@@ -37,14 +37,13 @@ p {
     height: fit-content;
     display: grid;
     place-items: center;
-    /* background-color: white; */
 }
 
 .slider {
     height: 250px;
     margin: auto;
     position: relative;
-    width: 80%;
+    width: 90%;
     display: grid;
     place-items: center;
     overflow: hidden;
