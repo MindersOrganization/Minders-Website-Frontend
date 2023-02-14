@@ -12,7 +12,6 @@
 }
 
 .timeline-section{
-    /* background-color: black; */
     min-height: 100vh;
     width: 100%;
     padding: 100px 15px;
@@ -39,7 +38,6 @@
 }
 
 .timeline-item{
-    /* background-color: grey; */
     margin-bottom: 40px;
     width: 100%;
     position: relative;
@@ -78,7 +76,7 @@
     border-radius: 50%;
     position: absolute;
     right: calc(50% - 15px);
-    top:50%;
+    top:calc(50% - 12px);
 }
 
 .item-line{
@@ -86,7 +84,7 @@
     height: 3px;
     background-color: white;
     position: absolute;
-    top:calc(50% + 11.5px);
+    top:calc(50%);
     z-index: -1;
 }
 
@@ -108,9 +106,21 @@
 }
 
 .timeline-start-circle{
-    top: -0.5%;
+    top: 25px;
 }
 
 .timeline-end-circle{
-    bottom: -0.5%;
+    bottom: 25px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .timeline-item{
+        margin-bottom: 0px;
+    }
+    .item-card{
+        width: max(9rem, 40%);
+    }
 }
