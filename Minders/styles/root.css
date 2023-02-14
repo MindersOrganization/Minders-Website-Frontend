@@ -51,6 +51,11 @@ body{
     list-style-type: none;
 }
 
+.navbar-list-item{
+    text-align: center;
+    width: 75px;
+}
+
 .navbar-link {
     text-decoration: none;
     color: white;

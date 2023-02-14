@@ -9,6 +9,7 @@
     font-size: clamp(5rem, 13vw + 1rem , 10rem);
     display: flex;
     justify-content: center;
+    margin: 4rem 0;
 }
 
 .timeline-section{
