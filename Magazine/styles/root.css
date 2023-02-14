@@ -5,12 +5,6 @@
     --minders-yellow: #EFC318;
     --minders-black: #252525;
     --minders-white: #F1F1F1;
-    --finished-dark: #FF0000;
-    --finished-light: #FFA6A6;
-    --ongoing-dark: #05FF00;
-    --ongoing-light: #B2FFA6;
-    --to-be-done-dark: #FFF500;
-    --to-be-done-light: #FDFF8A;
 }
 
 * {
@@ -22,15 +16,11 @@
 
 body{
     background-color: var(--minders-black);
+    background-image: url('../media/photo-1566378246598-5b11a0d486cc_1_1.png');
+    background-attachment: fixed;
 }
 
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-list-title, .navbar-link, h1, h2 {
+.footer-title, .navbar-link, h1, h2 {
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -39,15 +29,14 @@ body{
     position: sticky;
     top: 0;
     z-index: 5;
-    height: 60px;
+    height: 65px;
 }
 
 .navbar-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 45px;
     list-style-type: none;
 }
 
@@ -62,18 +51,13 @@ body{
 }
 
 .navbar-logo {
-    width: 90px;
+    width: 150px;
 }
 
-.navbar-logo-container {
-    background-color: black;
-    border-radius: 100%;
-    transform: translateY(25px);
-    width: 100px;
-    height: 100px;
-    align-items: center;
+.nav-list-item-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    width: 300px;
 }
 
 .navbar-list-mobile {
@@ -82,6 +66,11 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.navbar-list-item-mobile {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .mobile-menu {
@@ -115,6 +104,7 @@ footer {
     height: fit-content;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .footer-logo {
@@ -124,13 +114,7 @@ footer {
 .footer-title {
     color: var(--minders-yellow);
     font-size: x-large;
-
-}
-
-.footer-link {
     text-decoration: none;
-    color: white;
-    font-size: medium;
 }
 
 .footer-list-wrapper {
@@ -184,10 +168,6 @@ footer {
 
 .hamburger-icon {
     background-image: url("../media/icons8-menu-squared-100.png");
-}
-
-h1 {
-    font-size: 48px;
 }
 
 @media screen and (max-width: 600px) {
