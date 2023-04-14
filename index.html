@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minders</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/root.css">
+    <link rel="stylesheet" href="./styles/home.css">
+</head>
+<body>
+    <!---------------------Nav bar------------------------->
+    <nav class="navbar">
+        <ul class="navbar-list p-0 m-0">
+            <li class="navbar-list-item">
+                <a class="navbar-link" href="#">About</a>
+            </li>
+            <li class="navbar-list-item">
+                <a class="navbar-link" href="#">Contact</a>
+            </li>
+            <li class="navbar-list-item">
+                <a class="navbar-link" href="#">Legacy</a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="navbar-logo-container">
+                        <img class="navbar-logo" src="./media/Minders Yellow.png" alt="">
+                    </div>
+                </a>
+            </li>
+            <li class="navbar-list-item">
+                <a class="navbar-link" href="#">Events</a>
+            </li>
+            <li class="navbar-list-item">
+                <a class="navbar-link" href="#">Academic</a>
+            </li>
+            <li class="navbar-list-item">
+                <a class="navbar-link" href="#">Magazine</a>
+            </li>
+            <li class="hamburger-icon-list">
+                <button class="hamburger-icon-button" onclick="displayNavbar()">
+                    <div class="hamburger-icon-container hamburger-icon"></div>
+                </button>
+            </li>
+        </ul>
+        <div class="mobile-menu pt-5 pb-5" style="visibility: hidden;">
+            <ul class="navbar-list-mobile ps-0 pt-5 pb-5 pe-0 m-0">
+                <li class="navbar-list-item-mobile">
+                    <a class="navbar-link" href="#">About</a>
+                </li>
+                <li class="navbar-list-item-mobile">
+                    <a class="navbar-link" href="#">Contact</a>
+                </li>
+                <li class="navbar-list-item-mobile">
+                    <a class="navbar-link" href="#">Legacy</a>
+                </li>
+                <li class="navbar-list-item-mobile">
+                    <a class="navbar-link" href="#">Events</a>
+                </li>
+                <li class="navbar-list-item-mobile">
+                    <a class="navbar-link" href="#">Academic</a>
+                </li>
+                <li class="navbar-list-item-mobile">
+                    <a class="navbar-link" href="#">Magazine</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-------------------------About---------------------->
+    <div class="container-fluid about-section section pt-5 pb-5 mb-3">
+        <div class="container-fluid about-info">
+            <div class="container-fluid about-img"></div>
+            <div class="container-fluid about-text ps-5">
+                <h1>Minders</h1>
+                <p>Minders is a student activity founded in 2014 by "Dr. Mohamed Bilal", Dean of the Faculty of Computers and Artificial Intelligence at Helwan University. It is present in various universities like Helwan University, Cairo University, the Egyptian Chinese University, as well as the Misr university for science and technology and it is still expanding to more universities.</p>
+                <button class="btn see-more-btn">See more</button>
+            </div>
+        </div>
+    </div>
+    <!-------------------Latest Events-------------------->
+    <section class="latest-events section">
+        <h1 class="latest-events-header text-center title">Latest Events</h1>
+        <div class="arrow-container left-arrow">
+            <span>&#139;</span>
+        </div>
+        <div class="arrow-container right-arrow">
+            <span>&#155;</span>
+        </div>
+        <div class="events-slider-container">
+            <div class="event-card">
+                <div class="status-tag finished">
+                    <span class="status-circle finished"></span>
+                    <div class="status-name">Finished</div>
+                </div>
+            <img src="./media/first-step-event-demo.png" alt="" class="event-img"/>
+            <div class="event-title text-center">First Step'22</div>
+            </div>
+            <div class="event-card">
+                <div class="status-tag finished">
+                    <span class="status-circle finished"></span>
+                    <div class="status-name">Finished</div>
+                </div>
+            <img src="./media/first-step-event-demo.png" alt="" class="event-img"/>
+            <div class="event-title text-center">First Step'22</div>
+            </div>
+            <div class="event-card">
+                <div class="status-tag finished">
+                    <span class="status-circle finished"></span>
+                    <div class="status-name">Finished</div>
+                </div>
+            <img src="./media/first-step-event-demo.png" alt="" class="event-img"/>
+            <div class="event-title text-center">First Step'22</div>
+            </div>
+            <div class="event-card">
+                <div class="status-tag finished">
+                    <span class="status-circle finished"></span>
+                    <div class="status-name">Finished</div>
+                </div>
+            <img src="./media/first-step-event-demo.png" alt="" class="event-img"/>
+            <div class="event-title text-center">First Step'22</div>
+            </div>
+            <div class="event-card">
+                <div class="status-tag finished">
+                    <span class="status-circle finished"></span>
+                    <div class="status-name">Finished</div>
+                </div>
+            <img src="./media/first-step-event-demo.png" alt="" class="event-img"/>
+            <div class="event-title text-center">First Step'22</div>
+            </div>
+            <div class="event-card">
+                <div class="status-tag finished">
+                    <span class="status-circle finished"></span>
+                    <div class="status-name">Finished</div>
+                </div>
+            <img src="./media/first-step-event-demo.png" alt="" class="event-img"/>
+            <div class="event-title text-center">First Step'22</div>
+            </div>
+            <div class="event-card">
+                <div class="status-tag finished">
+                    <span class="status-circle finished"></span>
+                    <div class="status-name">Finished</div>
+                </div>
+            <img src="./media/first-step-event-demo.png" alt="" class="event-img"/>
+            <div class="event-title text-center">First Step'22</div>
+            </div>
+            <div class="event-card">
+                <div class="status-tag finished">
+                    <span class="status-circle finished"></span>
+                    <div class="status-name">Finished</div>
+                </div>
+            <img src="./media/first-step-event-demo.png" alt="" class="event-img"/>
+            <div class="event-title text-center">First Step'22</div>
+            </div>
+        </div>
+        <div class="see-more-btn-container text-center">
+            <button class="btn events-see-more-btn">See more</button>
+        </div>
+    </section>
+    <!--------------------Structure----------------------->
+    <div class="container-fluid structure-section p-0 section mt-3 mb-3">
+        <h1 class="title">Minders Structure</h1>
+        <div class="container-fluid structure-img-container p-0">
+            <div class="container-fluid structure-img"></div>
+        </div>
+    </div>
+    <!--------------------Sponsors------------------------>
+    <div class="container-fluid sponsor-section section mt-3 mb-3">
+        <h1 class="title">Our Sponsors</h1>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------Magazine----------------------->
+    <div class="container-fluid magazine-section section p-0 mt-3 mb-3">
+        <h1 class="title">Minders Magazine</h1>
+        <div class="container-fluid magazine-container pt-5 pb-5">
+            <div class="card card-container">
+                <img src="./media/Minders Black.png" class="card-img-top card-img-container" alt="">
+                <div class="card-body card-body-container">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button class="btn see-more-btn">See more</button>
+                </div>
+            </div>
+            <div class="card card-container">
+                <img src="./media/Minders Black.png" class="card-img-top card-img-container" alt="">
+                <div class="card-body card-body-container">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button class="btn see-more-btn">See more</button>
+                </div>
+            </div>
+            <div class="card card-container">
+                <img src="./media/Minders Black.png" class="card-img-top card-img-container" alt="">
+                <div class="card-body card-body-container">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button class="btn see-more-btn">See more</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!---------------------Partners----------------------->
+    <div class="container-fluid partners-section section mt-3 mb-3">
+        <h1 class="title">Our Partners</h1>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                    <div class="slide">
+                        <img src="./media/Minders White.png" alt="" class="slide-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------Footer------------------------->
+    <footer class="pt-5 pb-5">
+        <img src="./media/Vertical White.png" class="footer-logo" alt="">
+        <div class="footer-projects-section">
+            <h2 class="footer-title m-2">Projects</h2>
+            <div class="footer-list-wrapper">
+                <a class="footer-link" href="">Magazine</a>
+                <a class="footer-link" href="">Academic</a>
+                <a class="footer-link" href="">Events</a>
+            </div>
+        </div>
+        <div class="footer-about-section">
+            <h2 class="footer-title m-2">About</h2>
+            <div class="footer-list-wrapper">
+                <a class="footer-link" href="">About Minders</a>
+                <a class="footer-link" href="">Our Legacy</a>
+                <a class="footer-link" href="">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-follow-section">
+            <h2 class="footer-title m-2">Follow Us</h2>
+            <div class="footer-list-wrapper">
+                <div class="follow-us-container">
+                    <a class="social-media-icon" href="#">
+                        <div class="icon-container facebook-icon"></div>
+                    </a>
+                    <a class="social-media-icon" href="#">
+                        <div class="icon-container instagram-icon"></div>
+                    </a>
+                    <a class="social-media-icon" href="#">
+                        <div class="icon-container tiktok-icon"></div>
+                    </a>
+                    <a class="social-media-icon" href="#">
+                        <div class="icon-container linkedin-icon"></div>
+                    </a>
+                    <a class="social-media-icon" href="#">
+                        <div class="icon-container twitter-icon"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./scripts/root.js"></script>
+    <script src="./scripts/event.js"></script>
+</body>
+</html>
