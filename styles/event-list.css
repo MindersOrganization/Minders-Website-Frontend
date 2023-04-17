@@ -1,0 +1,33 @@
+/*****************************Event_list_page*************************************/
+.section_1_Events{
+    margin: 20px 0px 40px 0px;
+}
+
+.season{
+    margin: 20px 0px 40px 0px;
+}
+
+.section_1_Events .season .season_text{
+    padding: 40px 0px 5px 0px;
+}
+
+.section_1_Events .text_head{
+    text-align: center;
+    color: #EFC318;
+    font-size: 120px;
+    font-weight: 800;
+}
+
+.section_1_Events .text_head h2{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.section_1_Events .container{
+    background-color: #F1F1F1;
+    margin: auto;
+}
+
+.section_1_Events .container .card{
+    margin: 20px ;
+}
