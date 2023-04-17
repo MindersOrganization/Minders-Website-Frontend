@@ -1,0 +1,61 @@
+.section {
+    justify-content: center;
+    height: 100vh;
+}
+
+.message-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error-code {
+    font-size: 72px;
+    color: var(--minders-yellow);
+}
+
+.error-img {
+    width: clamp(200px, 30%, 350px);
+    margin-bottom: 35px;
+}
+
+.error-message {
+    color: var(--minders-yellow);
+    font-size: clamp(32px, 5vw, 52px);
+    letter-spacing: 1px;
+} 
+
+.message {
+    color: var(--minders-white);
+    font-size: clamp(22px, 3vw, 32px);
+}
+
+.homepage-btn {
+    background-color: var(--minders-yellow);
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: x-large;
+    margin: 50px;
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+
+}
+
+.homepage-btn:hover {
+    background-color: var(--minders-white);
+}
+
+.arrow {
+    background-image: url('../media/left-arrow.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: inherit;
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
