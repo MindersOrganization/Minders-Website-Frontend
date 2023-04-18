@@ -196,6 +196,10 @@ h1 {
     font-size: 48px;
 }
 
+.active {
+    color: var(--minders-yellow);
+}
+
 @media screen and (max-width: 600px) {
     .hamburger-icon-list {
         display: inline;
