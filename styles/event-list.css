@@ -1,33 +1,126 @@
-/*****************************Event_list_page*************************************/
-.section_1_Events{
-    margin: 20px 0px 40px 0px;
+.main-section {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
-.season{
-    margin: 20px 0px 40px 0px;
+#events-title {
+  margin-top: 2rem;
+  color: var(--minders-yellow);
+  font-size: clamp(6rem, 6vw + 1rem, 8rem);
+  display: flex;
+  justify-content: center;
 }
 
-.section_1_Events .season .season_text{
-    padding: 40px 0px 5px 0px;
+.year {
+  font-size: clamp(5rem, 5vw + 1rem, 6rem);
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
 }
 
-.section_1_Events .text_head{
-    text-align: center;
-    color: #EFC318;
-    font-size: 120px;
-    font-weight: 800;
+.year-events {
+  margin: auto;
+  padding: 1.5rem;
+  width: max(85%, 365px);
+  background-color: var(--minders-white);
+  border-radius: 25px;
 }
 
-.section_1_Events .text_head h2{
-    font-size: 60px;
-    font-weight: 800;
+.event-cards-container {
+  padding: 3rem 0;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.section_1_Events .container{
-    background-color: #F1F1F1;
-    margin: auto;
+.event-card {
+  width: clamp(250px, 25vw, 325px);
+  background-color: white;
+  position: relative;
+  border: 3px solid black;
+  border-radius: 15px;
 }
 
-.section_1_Events .container .card{
-    margin: 20px ;
+.event-img {
+  width: 100%;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.event-title {
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-top: 3px solid black;
+  font-family: "Bebas Neue", cursive;
+  text-decoration: underline;
+  font-size: 1.35rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.status-tag {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  align-items: center;
+  width: fit-content;
+  border-radius: 6px;
+  top: 12px;
+  right: 12px;
+}
+
+.finished {
+  background-color: var(--finished-light);
+  border: 2px solid var(--finished-dark);
+}
+
+.ongoing {
+  background-color: var(--ongoing-light);
+  border: 2px solid var(--ongoing-dark);
+}
+
+.to-be-done {
+  background-color: var(--to-be-done-light);
+  border: 2px solid var(--to-be-done-dark);
+}
+
+.finished span {
+  background-color: var(--finished-dark);
+}
+
+.ongoing span {
+  background-color: var(--ongoing-dark);
+}
+
+.to-be-done span {
+  background-color: var(--to-be-done-dark);
+}
+
+.status-name {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1rem;
+  margin: 0 3px;
+  height: 1.25em;
+}
+
+.status-circle {
+  margin: 0 3px;
+  height: 15px;
+  width: 15px;
+  background-color: var(--finished-dark);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .status-tag {
+    padding: 3px;
+  }
+  .status-name {
+    display: none;
+  }
 }
