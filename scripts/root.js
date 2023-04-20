@@ -24,3 +24,5 @@ function displayNavbar() {
         }
     }
 }
+
+export const BASE_URL = 'http://135.125.112.155:8000/';

@@ -139,6 +139,10 @@ footer {
     font-size: medium;
 }
 
+.footer-link:hover {
+    color: var(--minders-yellow);
+}
+
 .footer-list-wrapper {
     display: flex;
     flex-direction: column;
@@ -160,12 +164,20 @@ footer {
     margin-right: 5px;
 }
 
+.social-media-icon:hover {
+    color: var(--minders-yellow);
+}
+
 .icon-container {
     width: 30px;
     height: 30px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.footer-follow-section .icon-container:hover {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(21%) saturate(2209%) hue-rotate(345deg) brightness(97%) contrast(94%);
 }
 
 .facebook-icon {
@@ -187,6 +199,11 @@ footer {
 .linkedin-icon {
     background-image: url("../media/linkedin-3-512.png");
 }
+
+.email-icon {
+    background-image: url("../media/email-icon.svg");
+}
+
 
 .hamburger-icon {
     background-image: url("../media/icons8-menu-squared-100.png");

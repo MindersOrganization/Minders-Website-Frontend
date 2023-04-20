@@ -1,127 +1,116 @@
-/****************************contact_section*****************************************/
-.section_1_contact{
-    padding: 70px 0 70px 0;
+.title {
+    color: var(--minders-yellow);
 }
 
-.section_1_contact h2{
-    color: #EFC318;
-    font-size: 60px;
-    font-weight: 800;
+.main-section {
+    margin-top: 75px;
 }
 
-.section_31_contact .col-lg-8{
-    margin-top: 5%;
-}
-
-.section_1_contact .col-lg-4 h2{
-    color: #EFC318;
-    font-size: 50px;
-    font-weight: 800;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.section_1_contact .col-lg-4 .follwing_box{
-    padding: 40px 20px 40px 20px;
-    margin-left: auto;
-    background: #3838385E;
-    width: 75%;
-}
-
-.section_1_contact .format .submit{
-    padding: 18px 60px;
-    background: black;
-    border: 1px solid black;
-    color: white;
-    margin-top: 20px;
-    border-radius: 20px;
-}
-
-.section_1_contact .format .username{
-    width: 48%;
-    height: 50px; 
-    margin-bottom: 4%; 
-    font-size: 15px; 
-    border-radius: 5px; 
-    border: 2px solid #dadcdd;
-    border-radius: 20px;
-}
-
-.section_1_contact .format .email{
-    width: 48%;
-    height: 50px; 
-    margin-bottom: 4%; 
-    font-size: 15px; 
-    margin-left: 25px; 
-    border-radius: 5px; 
-    border: 2px solid #dadcdd;
-    border-radius: 20px;
-}
-
-.section_1_contact .format .subject{
+.content-container {
+    flex-direction: row;
+    justify-content: space-around;
     width: 100%;
-    height: 50px; 
-    margin-top: 1%; 
-    margin-bottom: 4%; 
-    font-size: 15px; 
-    border-radius: 5px; 
-    border: 2px solid #dadcdd;
-    border-radius: 20px;
 }
 
-.section_1_contact .format .box{
+.form-container {
+    width: 70%;
+    align-items: flex-start;
+}
+
+.form-content {
+    width: 95%;
+}
+
+.form-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 15px;
+}
+
+.submit-container {
+    text-align: center; 
     width: 100%;
-    margin-top: 3%; 
-    margin-bottom: 4%; 
-    font-size: 15px; 
-    border-radius: 5px; 
-    border: 2px solid #dadcdd;
-    border-radius: 20px;
 }
 
-.section_1_contact .format .submit:hover{
-    background: #EFC318;
-    border: 1px solid #EFC318;
-    color: rgb(0, 0, 0);
+.form-submit {
+    padding: 7px;
+    border-radius: 5px;
+    background-color: var(--minders-yellow);
+    border: 0;
 }
 
-.section_1_contact .col-lg-4 .media{
-    margin-bottom: 20px;
+.form-submit:hover {
+    background-color: var(--minders-white);
 }
 
-.section_1_contact .col-lg-4 .media i{
-    color: #FFFFFF;
-    font-size: 27px;
+.name-email-container {
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
 }
 
-.section_1_contact .col-lg-4 .media h5 a{
+.name-input, .email-input {
+    width: 47%;
+}
+
+.subject-input {
+    width: 100%;
+}
+
+.message-input {
+    width: 100%;
+    height: 250px;
+    resize: none;
+}
+
+.follow-us-side-container {
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #383838;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.follow-us-title {
+    align-self: center;
+}
+
+.social-media-url {
+    font-size: clamp(18px, 1.5vw, 22px);
+}
+
+.social-media-link {
     text-decoration: none;
-    color: #FFFFFF;
+    color: white;
+    display: flex;
+    width: 100%;
+    gap: 20px;
 }
 
-ul li{
-    list-style: none;
-    margin-bottom: 10px;
+.social-media-link:hover {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(21%) saturate(2209%) hue-rotate(345deg) brightness(97%) contrast(94%);
 }
 
-.section_1_contact .col-lg-4 .media h5 a:hover{
-    color: #ffe8c3;
-}
-/**************responsive_contact*******************/
-@media(max-width:700px){
-    .section_1_contact .format .username{
-        width: 100%;
-    }
-    
-    .section_1_contact .format .email{
-        width: 100%;
-        margin-left: 0px; 
+@media screen and (max-width: 600px) {
+    .content-container {
+        flex-direction: column;
     }
 
-    .section_1_contact .col-lg-4 .follwing_box{
-        margin-top: 40px;
-        margin-left: 0px;
+    .form-container {
+        width: 100%;
+        align-items: center;
+    }
+
+    .name-input, .email-input {
         width: 100%;
     }
+
+    .name-email-container {
+        flex-direction: column;
+    }
+
+    .follow-us-side-container {
+        background-color: var(--minders-black);
+    }
 }
-/****************End_responsive*********************/
