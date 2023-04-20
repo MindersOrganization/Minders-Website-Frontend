@@ -77,7 +77,14 @@
                         <input class="name-input form-input" type="text" placeholder="Enter your name" required>
                         <input class="email-input form-input" type="email" placeholder="Enter your email" required>
                     </div>
-                    <input class="subject-input form-input" type="text" placeholder="Enter subject" required>
+                    <div class="subject-type-container section">
+                        <input class="subject-input form-input" type="text" placeholder="Enter subject" required>
+                        <select class="dropdown-values" required>
+                            <option value="bug">Bug</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="question">Question</option>
+                        </select>
+                    </div>
                     <textarea class="message-input form-input" placeholder="Enter your message"></textarea>
                     <div class="submit-container">
                         <input class="form-submit form-input" type="submit" value="Submit">

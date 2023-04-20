@@ -3,7 +3,7 @@
 }
 
 .main-section {
-    margin-top: 75px;
+    margin-top: 50px;
 }
 
 .content-container {
@@ -13,7 +13,7 @@
 }
 
 .form-container {
-    width: 70%;
+    width: 60%;
     align-items: flex-start;
 }
 
@@ -44,10 +44,23 @@
     background-color: var(--minders-white);
 }
 
+.dropdown-values {
+    padding: 11px;
+    border-radius: 5px;
+    border: 0;
+}
+
 .name-email-container {
     justify-content: space-between;
     width: 100%;
     flex-direction: row;
+}
+
+.subject-type-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .name-input, .email-input {
@@ -55,7 +68,7 @@
 }
 
 .subject-input {
-    width: 100%;
+    width: 80%;
 }
 
 .message-input {
