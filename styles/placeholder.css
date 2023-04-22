@@ -41,6 +41,10 @@
     gap: 15px;
 }
 
+.icon-container:hover {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(21%) saturate(2209%) hue-rotate(345deg) brightness(97%) contrast(94%);
+}
+
 .homepage-btn {
     background-color: var(--minders-yellow);
     color: black;

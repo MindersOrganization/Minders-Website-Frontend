@@ -1,6 +1,6 @@
 import { BASE_URL } from "./root.js";
 
-const REQUIRED_URL = BASE_URL + '/message/';
+const REQUIRED_URL = BASE_URL + '/messages/';
 
 const form = document.getElementsByClassName('form-content')[0];
 const userName = document.getElementsByClassName('name-input')[0];
@@ -24,7 +24,6 @@ function handleSubmit(e) {
                 type: messageType.value
             })
         .then((res) => {
-            console.log(`Received status code ${res.status}`);
             window.location.assign('../pages/contact-success.html');
         })
         .catch((err) => {

@@ -1,6 +1,9 @@
 const hamburgerMenu = document.getElementsByClassName('hamburger-icon')[0];
 const navbarList = document.getElementsByClassName('mobile-menu')[0];
 const activePage = document.getElementsByClassName('active');
+const hamburgerButton = document.getElementsByClassName('hamburger-icon-button')[0];
+
+hamburgerButton.addEventListener('click', displayNavbar);
 
 function displayNavbar() {
     if (activePage.length > 0){
