@@ -5,12 +5,18 @@
     --minders-yellow: #EFC318;
     --minders-black: #252525;
     --minders-white: #F1F1F1;
-    --finished-dark: #FF0000;
-    --finished-light: #FFA6A6;
+
+    /* EVENT STATUS TAGS */
+    --finished-dark: #2C3BBE;
+    --finished-light: #A0AAFF;
     --ongoing-dark: #05FF00;
     --ongoing-light: #B2FFA6;
-    --to-be-done-dark: #FFF500;
-    --to-be-done-light: #FDFF8A;
+    --upcoming-dark: #FFF500;
+    --upcoming-light: #FDFF8A;
+    --sold-out-dark: #FF0000;
+    --sold-out-light: #FFA6A6;
+    --postponed-dark: #575857;
+    --postponed-light: #B2B5B2;
 }
 
 * {

@@ -31,25 +31,36 @@
 .event-cards-container {
   padding: 3rem 0;
   display: flex;
-  gap: 3rem;
+  gap: 1.5rem;
+  row-gap: 2rem;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .event-card {
-  width: clamp(250px, 25vw, 325px);
+  width: clamp(250px, 24vw, 335px);
+  height: clamp(250px, 24vw, 335px);
   background-color: white;
   position: relative;
   border: 3px solid black;
   border-radius: 15px;
+  overflow: hidden;
+}
+
+.event-img-container{
+  height: 90%;
+  display: flex;
+  align-items: center;
+  background: var(--minders-white);
 }
 
 .event-img {
   width: 100%;
   background-size: cover;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
+
 
 .event-title {
   background-color: white;
@@ -57,10 +68,18 @@
   position: absolute;
   bottom: 0;
   border-top: 3px solid black;
-  font-family: "Bebas Neue", cursive;
-  text-decoration: underline;
-  font-size: 1.35rem;
   border-radius: 0 0 10px 10px;
+}
+
+.event-title a{
+  color: black;
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+  font-size: 1.35rem;
+}
+
+.event-title a:hover{
+  text-decoration: underline;
 }
 
 .status-tag {
@@ -79,26 +98,44 @@
   border: 2px solid var(--finished-dark);
 }
 
+.finished span {
+  background-color: var(--finished-dark);
+}
+
 .ongoing {
   background-color: var(--ongoing-light);
   border: 2px solid var(--ongoing-dark);
-}
-
-.to-be-done {
-  background-color: var(--to-be-done-light);
-  border: 2px solid var(--to-be-done-dark);
-}
-
-.finished span {
-  background-color: var(--finished-dark);
 }
 
 .ongoing span {
   background-color: var(--ongoing-dark);
 }
 
-.to-be-done span {
-  background-color: var(--to-be-done-dark);
+.upcoming {
+  background-color: var(--upcoming-light);
+  border: 2px solid var(--upcoming-dark);
+}
+
+.upcoming span {
+  background-color: var(--upcoming-dark);
+}
+
+.sold-out {
+  background-color: var(--sold-out-light);
+  border: 2px solid var(--sold-out-dark);
+}
+
+.sold-out span {
+  background-color: var(--sold-out-dark);
+}
+
+.postponed {
+  background-color: var(--postponed-light);
+  border: 2px solid var(--postponed-dark);
+}
+
+.postponed span {
+  background-color: var(--postponed-dark);
 }
 
 .status-name {
