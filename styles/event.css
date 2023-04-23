@@ -129,7 +129,7 @@
   font-size: clamp(4rem, 10vw + 1rem, 7rem);
 }
 
-.events-slider-container {
+/* .events-slider-container {
   width: 90%;
   margin: auto;
   display: flex;
@@ -151,14 +151,14 @@
   width: 50px;
   top: calc(60% - 15px);
   transform: translateY(-50%);
-}
+} */
 
 .latest-events {
   position: relative;
   margin: 3rem 0;
 }
 
-.right-arrow {
+/* .right-arrow {
   right: 4.5%;
 }
 
@@ -256,9 +256,9 @@
   width: 15px;
   background-color: var(--finished-dark);
   border-radius: 50%;
-}
+} */
 
-.see-more-btn {
+/* .see-more-btn {
   background-color: var(--minders-yellow);
   border: 3px black solid;
   width: fit-content;
@@ -266,7 +266,7 @@
 
 .see-more-btn:hover {
   background-color: var(--minders-white);
-}
+} */
 
 @media screen and (max-width: 800px) {
   .status-tag {

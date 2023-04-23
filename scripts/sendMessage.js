@@ -1,4 +1,4 @@
-import { BASE_URL } from "./root.js";
+import { BASE_URL } from "./displayMobileNavbar.js";
 
 const REQUIRED_URL = BASE_URL + '/messages/';
 

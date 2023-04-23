@@ -1,4 +1,4 @@
-import { BASE_URL } from "./root.js";
+import { BASE_URL } from "./displayMobileNavbar.js";
 
 /**
  * TODO dividing events into sections according to year
@@ -33,7 +33,7 @@ const setStatus = (statusVal) => {
 /** gets all the events in the data base and
  * @returns {Object[]} a list of events { title, status, card_img, date }
  */
-const getEvents = async () => {
+export const getEvents = async () => {
   const eventsData = [];
   const res = await axios.get(`${BASE_URL}/events/`);
   res.data.forEach((val) => {
@@ -50,28 +50,33 @@ const getEvents = async () => {
 
 /** displays events on the page */
 const displayEvents = async () => {
-  const events = await getEvents();
-  events.forEach((val) => {
-    let eventCard = `
-    <div class="event-card">
-      <div class="status-tag ${val.status}">
-        <span class="status-circle ${val.status}"></span>
-        <div class="status-name">${
-          val.status === "sold-out" ? "sold out" : val.status
-        }</div>
+  try {
+    const events = await getEvents();
+    events.forEach((val) => {
+      let eventCard = `
+      <div class="event-card">
+        <div class="status-tag ${val.status}">
+          <span class="status-circle ${val.status}"></span>
+          <div class="status-name">${
+            val.status === "sold-out" ? "sold out" : val.status
+          }</div>
+        </div>
+        <div class = "event-img-container">
+          <img
+          src="${val.card_img}"
+          alt=""
+          class="event-img"
+          />
+        </div>
+        <div class="event-title text-center" /><a class="" href = "#">${val.title}<a></div>
       </div>
-      <div class = "event-img-container">
-        <img
-        src="${val.card_img}"
-        alt=""
-        class="event-img"
-        />
-      </div>
-      <div class="event-title text-center" /><a class="" href = "#">${val.title}<a></div>
-    </div>
-    `;
-    cardsContainer.innerHTML += eventCard;
-  });
+      `;
+      cardsContainer.innerHTML += eventCard;
+    });
+  }
+  catch (error){
+    console.log(error)
+  }
 };
 
 displayEvents();
