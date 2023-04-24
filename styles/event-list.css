@@ -71,21 +71,31 @@
   border-radius: 0 0 10px 10px;
 }
 
-.event-title a{
+.event-title button{
   color: black;
   font-family: "Bebas Neue", cursive;
   text-decoration: none;
   font-size: 1.35rem;
+  background-color: transparent;
+  border: none;
 }
 
-.event-title a:hover{
+.event-title button:hover{
   text-decoration: underline;
+}
+
+.event-status{
+  background-color: white;
+  width: 100%;
+  padding: 7px;
+  border-bottom: 4px solid black;
+  display: flex;
+  justify-content: end;
 }
 
 .status-tag {
   display: flex;
   justify-content: space-evenly;
-  position: absolute;
   align-items: center;
   width: fit-content;
   border-radius: 6px;
