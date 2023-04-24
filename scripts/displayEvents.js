@@ -1,14 +1,15 @@
-import { getEvents } from "./getEvents.js";
+import { BASE_URL } from "./displayMobileNavbar.js";
+import { getEvents } from './getEvents.js';
 
 const cardsContainer = document.querySelector(".event-cards-container");
 
 /** displays events on the page */
 const displayEvents = async () => {
-    try {
-      const events = await getEvents();
-      console.log(events);
-      events.forEach((val) => {
-        let eventCard = `
+  try {
+    const events = await getEvents();
+    // console.log(events);
+    events.forEach((val) => {
+      let eventCard = `
         <div class="event-card">
           <div class="event-status">
             <div class="status-tag ${val.status}">
@@ -25,15 +26,16 @@ const displayEvents = async () => {
             class="event-img"
             />
           </div>
-          <div class="event-title text-center" ><button class="event-btn" id=${val.id} href = "#">${val.title}<button></div>
+          <div class="event-title text-center" ><a href="./event.html?id=${val.id}" class="event-btn" id=${
+            val.id
+          }>${val.title}</a></div>
         </div>
         `;
-        cardsContainer.innerHTML += eventCard;
-      });
-    }
-    catch (error){
-      console.log(error)
-    }
-  };
-  
-  displayEvents()
+      cardsContainer.innerHTML += eventCard;
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+displayEvents()
