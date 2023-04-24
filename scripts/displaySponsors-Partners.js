@@ -1,7 +1,7 @@
 import { BASE_URL } from "./displayMobileNavbar.js";
 
-const PARTNERS_URL = BASE_URL + '/third-parties/?type=PARTNER';
-const SPONSORS_URL = BASE_URL + '/third-parties?type=SPONSOR';
+const PARTNERS_URL = BASE_URL + '/user/third-parties/?type=PARTNER';
+const SPONSORS_URL = BASE_URL + '/user/third-parties?type=SPONSOR';
 
 const partnersTrack = document.getElementsByClassName('partners-slide-track')[0]; 
 const sponsorsTrack = document.getElementsByClassName('sponsors-slide-track')[0]; 
