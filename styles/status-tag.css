@@ -1,0 +1,79 @@
+.status-tag {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: fit-content;
+  border-radius: 6px;
+  top: 12px;
+  right: 12px;
+}
+
+.finished {
+  background-color: var(--finished-light);
+  border: 2px solid var(--finished-dark);
+}
+
+.finished span {
+  background-color: var(--finished-dark);
+}
+
+.ongoing {
+  background-color: var(--ongoing-light);
+  border: 2px solid var(--ongoing-dark);
+}
+
+.ongoing span {
+  background-color: var(--ongoing-dark);
+}
+
+.upcoming {
+  background-color: var(--upcoming-light);
+  border: 2px solid var(--upcoming-dark);
+}
+
+.upcoming span {
+  background-color: var(--upcoming-dark);
+}
+
+.sold-out {
+  background-color: var(--sold-out-light);
+  border: 2px solid var(--sold-out-dark);
+}
+
+.sold-out span {
+  background-color: var(--sold-out-dark);
+}
+
+.postponed {
+  background-color: var(--postponed-light);
+  border: 2px solid var(--postponed-dark);
+}
+
+.postponed span {
+  background-color: var(--postponed-dark);
+}
+
+.status-name {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1rem;
+  margin: 0 3px;
+  height: 1.25em;
+}
+
+.status-circle {
+  margin: 0 3px;
+  height: 15px;
+  width: 15px;
+  background-color: var(--finished-dark);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .status-tag {
+    padding: 3px;
+  }
+
+  .status-name {
+    display: none;
+  }
+}

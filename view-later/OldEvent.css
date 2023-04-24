@@ -2,7 +2,6 @@
   width: 100%;
 }
 
-
 .event-details-card {
   width: 90%;
   background-color: white;
@@ -11,88 +10,117 @@
   padding: 2rem;
 }
 
-.event-container{
-  display: flex;
-  gap: 2rem;
-}
-
-.event-details{
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-}
-
-.event-header {
-  font-size: clamp(3rem, 4vw, 5rem);
-  margin: 0;
-}
-
-.left-half {
-  width: 60%;
+.top-half,
+.bottom-half {
+  overflow: auto; /*to make the parent take the floating div's height in consideration*/
 }
 
 .event-cover {
-  width: 100%;
+  width: 55%;
+  float: right;
+  margin: 6px;
 }
 
 .event-cover img {
   width: 100%;
 }
 
+.main-event-title {
+  margin-bottom: 2vw;
+}
+
 .event-date {
   color: grey;
   font-weight: bold;
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 .event-location {
   color: grey;
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
-.right-half{
-  position: relative;
+.event-header {
+  font-size: clamp(3rem, 4vw, 4rem);
+  height: fit-content;
+  margin: 0;
+  line-height: 90%;
+}
+
+.event-section h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 90%;
+}
+
+.bottom-half {
+  display: flex;
+}
+
+.event-agenda {
   width: 40%;
-  max-height: 26.5vw;
-  overflow-y: auto;
+  margin: 12px;
 }
 
-.event-description-header{
-  font-size: clamp(2rem, 3vw, 3.5rem);
-}
-
-.event-agenda img{
+.event-agenda img {
   width: 100%;
 }
 
-.details-status-tag{
-  position: absolute;
-  top: 5px;
-  right: 5px;
+.speakers{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-@media screen and (max-width: 800px) {
-  .event-details-card{
-    padding: 1rem;
-  }
-  .event-container{
-    flex-direction: column;
-  }
-  .left-half {
-    width: 100%;
-  }
-  .right-half {
-    width: 100%;
-  }
-  .right-half{
-    max-height: fit-content;
-  }
+.speakers > div{
+    margin: 6px;
+}
 
-  .status-tag{
-    top: 0;
-    right: 0;
-  }
+.speaker-cards-container{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.speaker-card{
+    width: clamp(100px, 10vw, 170px);
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 6px;
+}
+
+.speaker-img{
+    width: 100%;
+}
+
+.speaker-name{
+    font-family: "Bebas Neue", cursive;
+    font-size: clamp(1rem, 1.75vw, 1.35rem);
+    text-decoration: underline;
+    border-top: 3px solid black;
+}
+
+.registration-form{
+    padding: 6px;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.available-form{
+    border: 3px solid black;
+    background-color: var(--minders-yellow);
+    color: black;
+}
+
+.not-available-form{
+    border: 3px solid #706E6E;
+    background-color: #CBC8C8;
+    color: #706E6E;
 }
 
 .latest-events-header {
