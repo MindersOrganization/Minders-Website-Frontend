@@ -91,8 +91,9 @@ const displayEventDetails = async () => {
   } catch(e){
     if(e.response.status === 404){
       window.location.assign('../pages/not-found.html');
+    } else if(e.response.status === 500){
+      window.location.assign('../pages/server-error.html');
     }
   }
 };
-
 displayEventDetails();
