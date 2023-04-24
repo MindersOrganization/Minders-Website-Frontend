@@ -54,11 +54,11 @@
 }
 
 .slider::before, .slider::after {
-    background: linear-gradient(to right, rgba(25,25,25,1), rgba(25,25,25,0));
+    background: linear-gradient(to right, rgba(37, 37, 37,1), rgba(37, 37, 37,0));
     content: '';
     height: 100%;
     position: absolute;
-    width: 7%;
+    width: 9%;
     z-index: 2;
 }
 

@@ -26,7 +26,7 @@ const displayEvents = async () => {
             class="event-img"
             />
           </div>
-          <div class="event-title text-center" ><a href="./event.html?id=${val.id}" class="event-btn" id=${
+          <div class="event-title text-center" ><a href="./event.html?id=${val.id}" class="event-link" id=${
             val.id
           }>${val.title}</a></div>
         </div>

@@ -39,6 +39,8 @@
 }
 
 .event-card {
+  display: flex;
+  flex-direction: column;
   width: clamp(250px, 24vw, 335px);
   height: clamp(250px, 24vw, 335px);
   background-color: white;
@@ -49,29 +51,26 @@
 }
 
 .event-img-container{
-  height: 90%;
+  height: 100%;
   display: flex;
   align-items: center;
-  background: var(--minders-white);
+  background: white;
+  overflow: hidden;
 }
 
 .event-img {
   width: 100%;
-  background-size: cover;
-  /* border-radius: 10px; */
 }
 
 
 .event-title {
   background-color: white;
   width: 100%;
-  position: absolute;
-  bottom: 0;
   border-top: 3px solid black;
   border-radius: 0 0 10px 10px;
 }
 
-.event-title button{
+.event-title .event-link{
   color: black;
   font-family: "Bebas Neue", cursive;
   text-decoration: none;
@@ -80,7 +79,7 @@
   border: none;
 }
 
-.event-title button:hover{
+.event-title .event-link:hover{
   text-decoration: underline;
 }
 
@@ -88,7 +87,7 @@
   background-color: white;
   width: 100%;
   padding: 7px;
-  border-bottom: 4px solid black;
+  border-bottom: 3px solid black;
   display: flex;
   justify-content: end;
 }

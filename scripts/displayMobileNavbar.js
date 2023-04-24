@@ -28,4 +28,15 @@ function displayNavbar() {
     }
 }
 
+// const documentBody = document.getElementsByTagName('body')[0];
+// const pageFooter = document.getElementsByTagName('footer')[0];
+// function getPageHeight() {
+//     if(documentBody.clientHeight < window.innerHeight){
+//         pageFooter.style.position = 'absolute';
+//         pageFooter.style.bottom = '0';
+//         pageFooter.style.width = '100%';
+//     }
+// }
+// getPageHeight()
+
 export const BASE_URL = 'http://127.0.0.1:8000';

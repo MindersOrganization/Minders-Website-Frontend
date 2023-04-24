@@ -47,10 +47,6 @@
     position: relative;
 }
 
-.see-more-btn-container {
-    margin-top: 10px;
-}
-
 .structure-img-container {
     background-color: var(--minders-white);
     height: fit-content;
@@ -85,7 +81,6 @@
 .card-body-container {
     text-align: center;
 }
-
 @media screen and (max-width: 600px) {
     .about-info {
         flex-direction: column;
