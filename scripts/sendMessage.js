@@ -1,6 +1,6 @@
 import { BASE_URL } from "./displayMobileNavbar.js";
 
-const REQUIRED_URL = BASE_URL + '/messages/';
+const REQUIRED_URL = BASE_URL + '/user/messages/';
 
 const form = document.getElementsByClassName('form-content')[0];
 const userName = document.getElementsByClassName('name-input')[0];

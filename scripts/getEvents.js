@@ -33,7 +33,7 @@ const setStatus = (statusVal) => {
  */
 export const getEvents = async () => {
   const eventsData = [];
-  const res = await axios.get(`${BASE_URL}/events/`);
+  const res = await axios.get(`${BASE_URL}/user/events/`);
   res.data.forEach((val) => {
     eventsData.push({
       id: val.id,
