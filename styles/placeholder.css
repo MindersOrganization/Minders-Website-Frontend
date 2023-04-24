@@ -3,6 +3,7 @@
 .section {
     justify-content: center;
     height: 100vh;
+    gap: 10px;
 }
 
 .message-container{
@@ -19,8 +20,8 @@
 
 .error-img {
     width: clamp(200px, 30%, 350px);
-    margin-bottom: 35px;
-    margin-top: 35px;
+    /* margin-bottom: 35px; */
+    /* margin-top: 35px; */
 }
 
 .error-message {
@@ -43,8 +44,40 @@
     gap: 15px;
 }
 
+.social-media-icon:hover {
+    color: var(--minders-yellow);
+}
+
+.icon-container {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .icon-container:hover {
     filter: brightness(0) saturate(100%) invert(89%) sepia(21%) saturate(2209%) hue-rotate(345deg) brightness(97%) contrast(94%);
+}
+
+.facebook-icon {
+    background-image: url("../media/facebook-7-512.png");
+}
+
+.instagram-icon {
+    background-image: url("../media/new-Instagram-logo-white-glyph-1200x1199.png");
+}
+
+.twitter-icon {
+    background-image: url("../media/twitter-512.png");
+}
+
+.tiktok-icon {
+    background-image: url("../media/tiktok-512.png");
+}
+
+.linkedin-icon {
+    background-image: url("../media/linkedin-3-512.png");
 }
 
 .homepage-btn {
@@ -55,16 +88,19 @@
     justify-content: space-evenly;
     align-items: center;
     font-size: x-large;
-    margin: 50px;
+    /* margin-top: 5px; */
     border: 0;
-    padding-left: 10px;
-    padding-right: 10px;
     border-radius: 10px;
-
+    padding: 5px;
 }
 
 .homepage-btn:hover {
     background-color: var(--minders-white);
+}
+
+.homepage-btn-link, .homepage-btn-link:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 .arrow {
@@ -72,7 +108,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-color: inherit;
-    height: 25px;
-    width: 25px;
+    height: 18px;
+    width: 18px;
     margin-right: 5px;
 }

@@ -6,7 +6,7 @@ const hamburgerButton = document.getElementsByClassName('hamburger-icon-button')
 hamburgerButton.addEventListener('click', displayNavbar);
 
 function displayNavbar() {
-    if (activePage.length > 0){
+    if (activePage.length > 1){
         if (navbarList.style.visibility == 'hidden'){
             navbarList.style.visibility = 'visible';
             hamburgerMenu.style.backgroundImage = 'url("../media/icons8-close-window-100.png")'

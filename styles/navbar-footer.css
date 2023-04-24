@@ -34,6 +34,7 @@
 
 .navbar-link:hover {
     color: var(--minders-yellow);
+    text-decoration: none;
 }
 
 .navbar-logo {
@@ -110,6 +111,7 @@ footer {
 
 .footer-link:hover {
     color: var(--minders-yellow);
+    text-decoration: none;
 }
 
 .footer-list-wrapper {
@@ -184,6 +186,10 @@ h1 {
 
 .active {
     color: var(--minders-yellow);
+}
+
+.disabled-link, .disabled-link:hover {
+    color: gray;
 }
 
 @media screen and (max-width: 600px) {

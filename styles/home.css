@@ -38,8 +38,17 @@
     color: white;
 }
 
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .latest-events{
     position: relative;
+}
+
+.see-more-btn-container {
+    margin-top: 10px;
 }
 
 .structure-img-container {
