@@ -190,6 +190,8 @@ h1 {
 
 .disabled-link, .disabled-link:hover {
     color: gray;
+    user-select: none;
+    cursor:not-allowed;
 }
 
 @media screen and (max-width: 600px) {
