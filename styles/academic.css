@@ -1,0 +1,34 @@
+.main-section {
+    margin-top: 75px;
+}
+
+.title {
+    color: var(--minders-yellow);
+}
+
+.university-container , .level-container, .subject-container {
+    text-align: center;
+    background: var(--minders-white);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding: 15px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.selection {
+    padding: 15px;
+    border-radius: 5px;
+    background: #D8D0D0;
+    border: none;
+}
+
+.selection:hover {
+    background: var(--minders-yellow);
+}
+
+.selected {
+    background: var(--minders-yellow);
+}

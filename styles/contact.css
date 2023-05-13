@@ -1,0 +1,129 @@
+.title {
+    color: var(--minders-yellow);
+}
+
+.main-section {
+    padding: 7rem 0;
+}
+
+.content-container {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.form-container {
+    width: 60%;
+    align-items: flex-start;
+}
+
+.form-content {
+    width: 95%;
+}
+
+.form-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 15px;
+}
+
+.submit-container {
+    text-align: center; 
+    width: 100%;
+}
+
+.form-submit {
+    padding: 7px;
+    border-radius: 5px;
+    background-color: var(--minders-yellow);
+    border: 0;
+}
+
+.form-submit:hover {
+    background-color: var(--minders-white);
+}
+
+.dropdown-values {
+    padding: 11px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.name-email-container {
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+}
+
+.subject-type-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.name-input, .email-input {
+    width: 47%;
+}
+
+.subject-input {
+    width: 80%;
+}
+
+.message-input {
+    width: 100%;
+    height: 250px;
+    resize: none;
+}
+
+.follow-us-side-container {
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #383838;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.follow-us-title {
+    align-self: center;
+}
+
+.social-media-url {
+    font-size: clamp(18px, 1.5vw, 22px);
+}
+
+.social-media-link {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.social-media-link:hover {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(21%) saturate(2209%) hue-rotate(345deg) brightness(97%) contrast(94%);
+}
+
+@media screen and (max-width: 600px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .form-container {
+        width: 100%;
+        align-items: center;
+    }
+
+    .name-input, .email-input {
+        width: 100%;
+    }
+
+    .name-email-container {
+        flex-direction: column;
+    }
+
+    .follow-us-side-container {
+        background-color: var(--minders-black);
+    }
+}
