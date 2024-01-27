@@ -25,35 +25,43 @@ const getPartners = async () => {
 };
 
 const displayPartners = async () => {
-  const partners = await getPartners();
-  for (let i = 0; i < 2; i++) {
-    partners.forEach((value) => {
-      let partnerCard = `
-            <div class="slide">
-                <img src="${BASE_URL + value.image}" alt="" class="slide-img">
-            </div>
-            `;
-      partnersTrack.innerHTML += partnerCard;
-    });
-  }
+  // const partners = await getPartners();
+  // for (let i = 0; i < 2; i++) {
+  //   partners.forEach((value) => {
+  //     let partnerCard = `
+  //           <div class="slide">
+  //               <img src="${BASE_URL + value.image}" alt="" class="slide-img">
+  //           </div>
+  //           `;
+  //     partnersTrack.innerHTML += partnerCard;
+  //   });
+  // }
+  const partners = `
+  <div class="slide">
+    <a href="https://www.datacamp.com/donates" target="_blank">
+      <img src="../media/partners/DC_Donates_logo_inverted.png" alt="Datacamp Donates logo" class="slide-img">
+    </a>
+  </div>
+  `;
+  partnersTrack.innerHTML = partners;
 };
 
 const getSponsors = async () => {
-    try {
-      const sponsorsData = [];
-      const res = await axios.get(`${BASE_URL}/user/third-parties/?type=SPONSOR`);
-      res.data.forEach((val) => {
-        sponsorsData.push({
-          name: val.name,
-          image: val.image,
-          url: val.url,
-        });
+  try {
+    const sponsorsData = [];
+    const res = await axios.get(`${BASE_URL}/user/third-parties/?type=SPONSOR`);
+    res.data.forEach((val) => {
+      sponsorsData.push({
+        name: val.name,
+        image: val.image,
+        url: val.url,
       });
-      return sponsorsData;
-    } catch (err) {
-      console.log(err);
-    }
-  };
+    });
+    return sponsorsData;
+  } catch (err) {
+    console.log(err);
+  }
+};
 
 const displaySponsors = async () => {
   const sponsors = await getSponsors();
