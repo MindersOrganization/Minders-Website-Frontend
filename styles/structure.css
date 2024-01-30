@@ -1,0 +1,118 @@
+/* structure */
+
+.structure-img-container {
+    background-color: var(--minders-white);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* .structure-img {
+    height: 40vw;
+    margin: 3%;
+    background-image: url("../media/Structure.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--minders-white);
+} */
+
+.img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-container .box {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    margin: 2rem;
+}
+
+.managers-img-container .box {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem;
+}
+
+.heads-img-container .box {
+    position: relative;
+    width: 12rem;
+    height: 15rem;
+    margin: 2rem;
+}
+
+.img-container .box:hover .imgBox,
+.managers-img-container .box:hover .imgBox,
+.heads-img-container .box:hover .imgBox {
+    transform: translate(-3.5rem, -3.5rem);
+}
+
+.img-container .box:hover .content,
+.managers-img-container .box:hover .content,
+.heads-img-container .box:hover .content {
+    transform: translate(3.5rem, 3.5rem);
+}
+
+.imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+
+.imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* resize: both; */
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 1;
+    align-items: flex-end;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+}
+
+.content h2 {
+    display: block;
+    margin-top: 1rem;
+    /* font-size: 2rem; */
+    color: #111;
+    font-weight: 80;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.content span {
+    color: #555;
+    font-size: 1rem;
+    font-weight: 80;
+    letter-spacing: 2px;
+}
+
+.Partners-images {
+    max-width: 100%;
+    height: auto;
+    max-height: 120px;
+}
