@@ -14,6 +14,7 @@
     overflow: hidden;
 }
 
+
 /* .partners-slide-track, .sponsors-slide-track {
     display: flex;
     width: calc(18 * 250px);
@@ -53,7 +54,8 @@
     transform: translateZ(20px);
 }
 
-.slider::before, .slider::after {
+.slider::before,
+.slider::after {
     /* background: linear-gradient(to right, rgba(37, 37, 37,1), rgba(37, 37, 37,0)); */
     content: '';
     height: 100%;
@@ -71,4 +73,10 @@
 .slider::before {
     left: 0;
     top: 0;
+}
+
+.Partners-images {
+    max-width: 100%;
+    height: auto;
+    max-height: 120px;
 }
