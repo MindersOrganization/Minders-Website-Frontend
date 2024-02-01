@@ -43,7 +43,7 @@
     color: inherit;
 }
 
-.latest-events{
+.latest-events {
     position: relative;
 }
 
@@ -81,20 +81,24 @@
 .card-body-container {
     text-align: center;
 }
+
+.Partners-images {
+    max-width: 100%;
+    height: auto;
+    max-height: 120px;
+}
+
 @media screen and (max-width: 600px) {
     .about-info {
         flex-direction: column;
     }
-
     .about-text {
         align-items: center;
         padding: 0px !important;
     }
-
     .magazine-container {
         flex-direction: column;
     }
-
     .card-container {
         width: 90% !important;
         display: flex !important;
@@ -104,11 +108,9 @@
         margin-top: 2%;
         margin-bottom: 2%;
     }
-
     .card-img-container {
         width: 50%;
     }
-
     .card-body-container {
         text-align: start;
     }
