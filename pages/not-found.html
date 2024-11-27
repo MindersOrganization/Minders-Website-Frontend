@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events</title>
-    <link rel="shortcut icon" href="../media/Logo.svg" type="image/x-icon" />
+    <title>Minders</title>
+    <link rel="shortcut icon" href="./media/Logo.svg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
@@ -14,40 +14,50 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../styles/navbar-footer.css" />
-    <link rel="stylesheet" href="../styles/event-list.css" />
+    <style>
+      body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
   </head>
   <body>
     <!---------------------Nav bar------------------------->
     <nav class="navbar">
       <ul class="navbar-list p-0 m-0">
         <li class="navbar-list-item">
-          <a class="navbar-link" href="./about.html">About</a>
+          <a class="navbar-link" href="./pages/about.html">About</a>
         </li>
         <li class="navbar-list-item">
-          <a class="navbar-link" href="./contact.html">Contact</a>
+          <a class="navbar-link" href="./pages/contact.html">Contact</a>
         </li>
         <li class="navbar-list-item">
           <a class="navbar-link disabled-link">Legacy</a>
         </li>
         <li>
-          <a href="../index.html">
+          <a>
             <div class="navbar-logo-container">
               <img
                 class="navbar-logo"
-                src="../media/Minders White.png"
+                src="./media/Minders Yellow.png"
                 alt=""
               />
             </div>
           </a>
         </li>
         <li class="navbar-list-item">
-          <a class="navbar-link active">Events</a>
+          <a class="navbar-link" href="./pages/event-list.html">Events</a>
         </li>
         <li class="navbar-list-item">
           <a class="navbar-link disabled-link">Academic</a>
         </li>
         <li class="navbar-list-item">
           <a class="navbar-link disabled-link">Magazine</a>
+        </li>
+        <li class="navbar-list-item">
+          <a href="pages/join.html" class="navbar-link">Join</a>
         </li>
         <li class="hamburger-icon-list">
           <button class="hamburger-icon-button">
@@ -58,19 +68,19 @@
       <div class="mobile-menu pt-5 pb-5" style="visibility: hidden">
         <ul class="navbar-list-mobile ps-0 pt-5 pb-5 pe-0 m-0">
           <li class="navbar-list-item-mobile">
-            <a class="navbar-link" href="../index.html">Home</a>
+            <a class="navbar-link active">Home</a>
           </li>
           <li class="navbar-list-item-mobile">
-            <a class="navbar-link" href="./about.html">About</a>
+            <a class="navbar-link" href="./pages/about.html">About</a>
           </li>
           <li class="navbar-list-item-mobile">
-            <a class="navbar-link" href="./contact.html">Contact</a>
+            <a class="navbar-link" href="./pages/contact.html">Contact</a>
           </li>
           <li class="navbar-list-item-mobile">
             <a class="navbar-link disabled-link">Legacy</a>
           </li>
           <li class="navbar-list-item-mobile">
-            <a class="navbar-link active">Events</a>
+            <a class="navbar-link" href="./pages/event-list.html">Events</a>
           </li>
           <li class="navbar-list-item-mobile">
             <a class="navbar-link disabled-link">Academic</a>
@@ -81,35 +91,37 @@
         </ul>
       </div>
     </nav>
-    <!---------------------body--------------------------->
-
-    <section class="main-section">
-      <h1 id="events-title">Events</h1>
-
-      <section class="year-events">
-        <div class="event-cards-container">
-          <!-- event cards -->
+    <!---------------------Main------------------------->
+    <main>
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-12 text-center text-white">
+            <h1 class="display-1 mt-5">404 | Page Not Found</h1>
+            <a href="index.html">
+              <button class="btn btn-primary mt-5">Go To Home</button>
+            </a>
+          </div>
         </div>
-      </section>
-    </section>
+      </div>
+      </main>
 
-    <!---------------------footer--------------------------->
+    <!---------------------Footer------------------------->
     <footer class="pt-5 pb-5">
-      <img src="../media/Vertical White.png" class="footer-logo" alt="" />
+      <img src="./media/Vertical White.png" class="footer-logo" alt="" />
       <div class="footer-projects-section mt-4">
         <h2 class="footer-title">Projects</h2>
         <div class="footer-list-wrapper">
           <a class="footer-link disabled-link">Magazine</a>
           <a class="footer-link disabled-link">Academic</a>
-          <a class="footer-link" href="./event-list.html">Events</a>
+          <a class="footer-link" href="./pages/event-list.html">Events</a>
         </div>
       </div>
       <div class="footer-about-section mt-4">
         <h2 class="footer-title">About</h2>
         <div class="footer-list-wrapper">
-          <a class="footer-link" href="./about.html">About Minders</a>
+          <a class="footer-link" href="./pages/about.html">About Minders</a>
           <a class="footer-link disabled-link">Our Legacy</a>
-          <a class="footer-link" href="./contact.html">Contact Us</a>
+          <a class="footer-link" href="./pages/contact.html">Contact Us</a>
         </div>
       </div>
       <div class="footer-follow-section mt-4">
@@ -155,8 +167,6 @@
         </div>
       </div>
     </footer>
-
-    <!---------------------scripts--------------------------->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"
       integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w=="
@@ -164,7 +174,5 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
-    <script type="module" src="../scripts/displayMobileNavbar.js"></script>
-    <script type="module" src="../scripts/displayEvents.js"></script>
   </body>
 </html>
