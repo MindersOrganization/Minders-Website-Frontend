@@ -1,0 +1,63 @@
+.sections {
+    display: flex;
+    flex-direction: column;
+}
+
+.sections div {
+    display: flex;
+    flex-direction: row;
+    /* Default direction for larger screens */
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
+
+.sections div.reversed {
+    flex-direction: row-reverse;
+}
+
+.sections div .our {
+    width: 30%;
+    color: rgb(66, 66, 66);
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+    background-color: #e3ba15;
+    box-shadow: 0 15px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.sections div .text {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .sections div, 
+    .sections div.reversed {
+        flex-direction: column;
+        /* Stack elements vertically */
+        margin: 20px;
+    }
+
+    .sections div .our {
+        width: 90%;
+        /* Increase width for better visibility */
+        font-size: 24px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .sections div .text {
+        width: 90%;
+        /* Increase width for better spacing */
+        text-align: center;
+        /* Center the text */
+        margin-top: 10px;
+    }
+}
