@@ -94,7 +94,7 @@
     width: 100%;
     /*border-top: 3px solid black;*/
     border-radius: 0 0 10px 10px;
-    color: #B49421FF;
+    color: #efc318;
 
 }
 
@@ -117,12 +117,12 @@
     font-family: "Bebas Neue", cursive;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: 0.3s;
 
 }
 
 .event-link > button:hover {
-    background-color: #B49421FF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .event-status {
