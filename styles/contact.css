@@ -34,7 +34,9 @@
 }
 
 .form-submit {
-    padding: 7px;
+    font-family: 'Bebas Neue';
+    font-size: 18px;
+    padding: 7px 10px;
     border-radius: 5px;
     background-color: var(--minders-yellow);
     border: 0;

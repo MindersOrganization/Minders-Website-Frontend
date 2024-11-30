@@ -1,62 +1,62 @@
 .title {
     color: var(--minders-yellow);
     text-align: center;
-}
-
-.about-section {
+  }
+  
+  .about-section {
     background-color: var(--minders-white);
-}
-
-.about-info {
+  }
+  
+  .about-info {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-}
-
-.about-text {
+  }
+  
+  .about-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.about-img {
+  }
+  
+  .about-img {
     height: 350px;
     background-image: url("../media/minders22crew.jpg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-.see-more-btn {
+  }
+  
+  .see-more-btn {
     background-color: var(--minders-yellow);
     border: 3px black solid;
     width: fit-content;
-}
-
-.see-more-btn:hover {
+  }
+  
+  .see-more-btn:hover {
     background-color: var(--minders-black);
     color: white;
-}
-
-.link {
+  }
+  
+  .link {
     text-decoration: none;
     color: inherit;
-}
-
-.latest-events {
+  }
+  
+  .latest-events {
     position: relative;
-}
-
-.structure-img-container {
+  }
+  
+  .structure-img-container {
     background-color: var(--minders-white);
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.structure-img {
+  }
+  
+  .structure-img {
     height: 40vw;
     margin: 3%;
     background-image: url("../media/minders25highboard.png");
@@ -64,48 +64,81 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-color: var(--minders-white);
-}
-
-.magazine-container {
+  }
+  
+  .magazine-container {
     background-color: var(--minders-white);
     height: fit-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.card-container {
+  }
+  
+  .card-container {
     width: 25% !important;
-}
-
-.card-body-container {
+  }
+  
+  .card-body-container {
     text-align: center;
-}
-
-@media screen and (max-width: 600px) {
+  }
+  
+  @media screen and (max-width: 600px) {
     .about-info {
-        flex-direction: column;
+      flex-direction: column;
     }
     .about-text {
-        align-items: center;
-        padding: 0px !important;
+      align-items: center;
+      padding: 0px !important;
     }
     .magazine-container {
-        flex-direction: column;
+      flex-direction: column;
     }
     .card-container {
-        width: 90% !important;
-        display: flex !important;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 2%;
-        margin-bottom: 2%;
+      width: 90% !important;
+      display: flex !important;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 2%;
+      margin-bottom: 2%;
     }
     .card-img-container {
-        width: 50%;
+      width: 50%;
     }
     .card-body-container {
-        text-align: start;
+      text-align: start;
     }
-}
+  }
+  /*-------------------------Hiring---------------------- */
+  .Hiring-cont {
+    background-color: #ffc33f;
+    .Hiring {
+      margin: 5rem 0 3rem 0 ;
+      background-color: #ffc33f;
+      height: 450px;
+      background-image: url("../media/Looking.gif");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      .Hiring-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        .join-us-btn {
+          background-color: white;
+          border-radius: 10px;
+          font-size: 20px;
+          box-shadow: 0 15px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+          a {
+            font-family: "Bebas Neue";
+          }
+          &:hover{
+              box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+          }
+        }
+      }
+    }
+  }
+  
