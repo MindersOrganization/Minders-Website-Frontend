@@ -52,7 +52,7 @@
   border: none;
   border-radius: 15px;
   overflow: hidden;
-  
+
 }
 
 
@@ -65,10 +65,10 @@
 }
 
 .event-img {
- 
+
   background-repeat: no-repeat;
-    height: 100%;
-    background-size: 100% 100%;
+  height: 100%;
+  background-size: 100% 100%;
 }
 
 .event-card-link{
@@ -110,18 +110,18 @@
 }
 
 .see-more-btn {
-  background-color: var(--minders-yellow);
-  border: 3px black solid;
-  width: fit-content;
+    background-color: var(--minders-yellow);
+    border: 3px black solid;
+    width: fit-content;
 }
 
 .see-more-btn:hover {
-  border: 3px solid var(--minders-yellow);
-  background-color: transparent;
-  color: var(--minders-yellow);
+    border: 3px solid var(--minders-yellow);
+    background-color: transparent;
+    color: var(--minders-yellow);
 }
 
 .link {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }

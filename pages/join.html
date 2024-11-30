@@ -14,12 +14,52 @@
 			referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="../styles/navbar-footer.css" />
 		<style>
+			.container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 80%;
+				padding: 20px;
+			}
+
 			.iframe-container {
 				display: flex;
-				justify-content: center;
+				justify-content: space-between;
 				align-items: center;
 				height: max-content;
 				padding: 20px 0;
+				width: 100%;
+			}
+
+			.container > .add-container {
+				width: 96%;
+				height: 100px;
+				background-color: #ccc;
+			}
+
+			.iframe-container .add-container {
+				width: 30%;
+				height: 600px;
+				background-color: #ccc;
+			}
+
+			iframe {
+				width: 100%;
+				max-width: 800px;
+				height: 600px;
+				border: none;
+				margin: 0;
+			}
+
+			@media (max-width: 768px) {
+				.container {
+					flex-direction: column-reverse;
+				}
+
+				.iframe-container .add-container {
+					display: none;
+				}
 			}
 		</style>
 		<!-- Google Adsense / Analytics tags -->
@@ -32,9 +72,11 @@
 			src="https://www.googletagmanager.com/gtag/js?id=G-CGGN6SSH7M"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
+
 			function gtag() {
 				dataLayer.push(arguments);
 			}
+
 			gtag("js", new Date());
 
 			gtag("config", "G-CGGN6SSH7M");
@@ -45,32 +87,32 @@
 		<nav class="navbar">
 			<ul class="navbar-list p-0 m-0">
 				<li class="navbar-list-item">
-					<a class="navbar-link" href="./about.html">About</a>
+					<a class="navbar-link" href="../pages/about.html">About</a>
 				</li>
 				<li class="navbar-list-item">
-					<a class="navbar-link active">Contact</a>
+					<a class="navbar-link" href="../pages/contact.html">Contact</a>
 				</li>
 				<li class="navbar-list-item">
-					<a class="navbar-link disabled-link">Legacy</a>
+					<a class="navbar-link" href="../pages/legacy.html">Legacy</a>
 				</li>
 				<li>
 					<a href="../index.html">
 						<div class="navbar-logo-container">
 							<img
 								class="navbar-logo"
-								src="../media/Minders White.png"
+								src="../media/Minders Yellow.png"
 								alt="" />
 						</div>
 					</a>
 				</li>
 				<li class="navbar-list-item">
-					<a class="navbar-link" href="./event-list.html">Events</a>
+					<a class="navbar-link" href="../pages/event-list.html">Events</a>
 				</li>
 				<li class="navbar-list-item">
-					<a class="navbar-link disabled-link">Academic</a>
+					<a class="navbar-link" href="../pages/coming-soon.html">Academic</a>
 				</li>
 				<li class="navbar-list-item">
-					<a class="navbar-link disabled-link">Magazine</a>
+					<a class="navbar-link" href="../pages/coming-soon.html">Magazine</a>
 				</li>
 				<li class="hamburger-icon-list">
 					<button class="hamburger-icon-button">
@@ -81,41 +123,50 @@
 			<div class="mobile-menu pt-5 pb-5" style="visibility: hidden">
 				<ul class="navbar-list-mobile ps-0 pt-5 pb-5 pe-0 m-0">
 					<li class="navbar-list-item-mobile">
-						<a class="navbar-link" href="../index.html">Home</a>
+						<a class="navbar-link active">Home</a>
 					</li>
 					<li class="navbar-list-item-mobile">
-						<a class="navbar-link" href="./about.html">About</a>
+						<a class="navbar-link" href="./pages/about.html">About</a>
 					</li>
 					<li class="navbar-list-item-mobile">
-						<a class="navbar-link active">Contact</a>
+						<a class="navbar-link" href="./pages/contact.html">Contact</a>
 					</li>
 					<li class="navbar-list-item-mobile">
-						<a class="navbar-link disabled-link">Legacy</a>
+						<a class="navbar-link disabled-link" href="./pages/legacy.html"
+							>Legacy</a
+						>
 					</li>
 					<li class="navbar-list-item-mobile">
-						<a class="navbar-link" href="./event-list.html">Events</a>
+						<a class="navbar-link" href="./pages/event-list.html">Events</a>
 					</li>
 					<li class="navbar-list-item-mobile">
-						<a class="navbar-link disabled-link">Academic</a>
+						<a class="navbar-link disabled-link" href="./pages/coming-soon.html"
+							>Academic</a
+						>
 					</li>
 					<li class="navbar-list-item-mobile">
-						<a class="navbar-link disabled-link">Magazine</a>
+						<a class="navbar-link disabled-link" href="./pages/coming-soon.html"
+							>Magazine</a
+						>
 					</li>
 				</ul>
 			</div>
 		</nav>
 		<!---------------------body--------------------------->
 
-		<div class="iframe-container">
-			<iframe
-				src="https://docs.google.com/forms/d/e/1FAIpQLSe9quoxoi4gBKzV6FrH91IoCaLIx8zoT7X5Jz97AoH-mlx9Eg/viewform?embedded=true"
-				width="640"
-				height="600"
-				frameborder="0"
-				marginheight="0"
-				marginwidth="0"
-				>جارٍ التحميل…</iframe
-			>
+		<div class="container">
+			<div class="add-container"></div>
+			<div class="iframe-container">
+				<div class="add-container"></div>
+				<iframe
+					src="https://docs.google.com/forms/d/e/1FAIpQLSe9quoxoi4gBKzV6FrH91IoCaLIx8zoT7X5Jz97AoH-mlx9Eg/viewform?embedded=true"
+					frameborder="0"
+					marginheight="0"
+					marginwidth="0"
+					>جارٍ التحميل…
+				</iframe>
+				<div class="add-container"></div>
+			</div>
 		</div>
 
 		<!---------------------Footer------------------------->
@@ -124,17 +175,14 @@
 			<div class="footer-projects-section mt-4">
 				<h2 class="footer-title">Projects</h2>
 				<div class="footer-list-wrapper">
-					<a class="footer-link disabled-link">Magazine</a>
-					<a class="footer-link disabled-link">Academic</a>
-					<a class="footer-link" href="./event-list.html">Events</a>
+					<a class="footer-link" href="../pages/event-list.html">Events</a>
 				</div>
 			</div>
 			<div class="footer-about-section mt-4">
 				<h2 class="footer-title">About</h2>
 				<div class="footer-list-wrapper">
-					<a class="footer-link" href="./about.html">About Minders</a>
-					<a class="footer-link disabled-link">Our Legacy</a>
-					<a class="footer-link" href="./contact.html">Contact Us</a>
+					<a class="footer-link" href="../pages/about.html">About Minders</a>
+					<a class="footer-link" href="../pages/contact.html">Contact Us</a>
 				</div>
 			</div>
 			<div class="footer-follow-section mt-4">
