@@ -39,4 +39,4 @@ function displayNavbar() {
 // }
 // getPageHeight()
 
-export const BASE_URL = 'https://mindersclub.org/api';
+export const BASE_URL = 'https://mindersfci.org/';
