@@ -53,7 +53,8 @@ emailjs.send(serviceID,templateID,params)
     document.getElementById("type").value="BUG";
 
     console.log(res);
-alert("your message sent successfully");
+    window.location.assign('../pages/contact-success.html');
+// alert("your message sent successfully");
 })
 .catch(err=>{
     alert("something wrong happened");
