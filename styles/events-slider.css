@@ -1,7 +1,7 @@
 @import "./status-tag.css";
 
 .events-slider-container {
-  width: 90%;
+  width: 80%;
   margin: 2rem auto;
   display: flex;
   /* justify-content: space-evenly; */
@@ -48,10 +48,13 @@
   height: clamp(250px, 24vw, 335px);
   background-color: white;
   position: relative;
-  border: 3px solid black;
+  /* border: 3px solid black; */
+  border: none;
   border-radius: 15px;
   overflow: hidden;
+
 }
+
 
 .event-img-container {
   height: 100%;
@@ -62,13 +65,26 @@
 }
 
 .event-img {
-  width: 100%;
+
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: 100% 100%;
 }
 
+.event-card-link{
+  height: 100%;
+  color: black;
+  text-decoration: none;
+  
+}
 .event-title {
-  background-color: white;
+  /* background-color: white; */
   width: 100%;
-  border-top: 3px solid black;
+  padding: 4px;
+  text-shadow: 5px 5px 6px  rgba(0, 0, 0, 0.27);
+  /* border-top: 3px solid black; */
+  text-align: center;
+  border: none;
   border-radius: 0 0 10px 10px;
 }
 

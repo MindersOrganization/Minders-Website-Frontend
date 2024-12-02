@@ -37,9 +37,77 @@
     align-items: center;
 }
 
+.timeline-section {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.timeline-header,
+.timeline-footer {
+    position: relative;
+    text-align: center;
+    background-color: #383838;
+    border-radius: 5px;
+}
+
+.year-bg {
+    font-size: 190px;
+    letter-spacing: 40px;
+    color: #e3ba1516;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.year-bg.top {
+    border-bottom: 3px solid white;
+}
+
+.year-bg.bottom {
+    border-top: 3px solid white;
+}
+
+.timeline-section .label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-content .timeline-item {
+    display: flex;
+    color: white;
+}
+
+.timeline-item .image {
+    width: 50%;
+    border-right: 3px solid white;
+    padding: 40px;
+}
+
+.timeline-item .image img {
+    width: 100%;
+    padding: 30px;
+}
+
+.timeline-item .timeline-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 40px;
+}
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-    .sections div, 
+
+    .sections div,
     .sections div.reversed {
         flex-direction: column;
         /* Stack elements vertically */
@@ -55,9 +123,47 @@
 
     .sections div .text {
         width: 90%;
-        /* Increase width for better spacing */
         text-align: center;
-        /* Center the text */
         margin-top: 10px;
     }
+
+    .timeline-header, .timeline-footer {
+        display: none;
+    }
+/* 
+    .year-bg {
+        font-size: 88px;
+    } */
+
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timeline-item .image {
+        width: 100%;
+        height: 50%;
+        border-right: 3px solid white;
+        padding: 10px;
+    }
+
+    .timeline-item .image {
+        border: none;
+    }
+
+    .timeline-item img {
+        padding: none;
+    }
+
+    .timeline-item .timeline-text {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
 }
