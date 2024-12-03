@@ -99,8 +99,13 @@
     <!-------------------------Hiring---------------------->
     <div class="container-fluid section Hiring-cont">
       <div class="container-fluid Hiring">
-        <div class="container-fluid Hiring-text">
+        <div class="container text-center">
+          <div class="countdown " id="counter">
+            <!-- Countdown timer will be inserted here -->
+          </div>
           <h1>We Are looking for new talents</h1>
+        </div>
+        <div class="container-fluid Hiring-text">
           <button class="btn join-us-btn">
             <a href="./pages/join.html" class="link">join us now!</a>
           </button>
@@ -474,5 +479,50 @@
     <script type="module" src="./scripts/displayMobileNavbar.js"></script>
     <!-- <script type="module" src="./scripts/displaySponsors-Partners.js"></script>
     <script type="module" src="./scripts/displayLatestEvents.js"></script> -->
+
+
+    <!-- Countdown timer script -->
+    <script>
+      function startCountdown(targetDate) {
+        let timerHTML = '';
+
+        ['days','hours', 'minutes','seconds'].forEach(item => {
+          timerHTML += `<div class="time-box">
+          <div class="number" id="${item}">${String(0).padStart(2, '0')}</div>
+          <div class="label">${item.charAt(0).toUpperCase() + item.slice(1)}</div>
+          </div>
+      `;
+        });
+
+        document.getElementById('counter').innerHTML = timerHTML;
+        function updateCountdown() {
+          const now = new Date();
+          const remainingTime = targetDate - now;
+
+          if (remainingTime <= 0) {
+            clearInterval(interval);
+            return;
+          }
+
+          const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((remainingTime / (1000 * 60 * 60)) % 24);
+          const minutes = Math.floor((remainingTime / (1000 * 60)) % 60);
+          const seconds = Math.floor((remainingTime / 1000) % 60);
+
+          document.getElementById('days').textContent = String(days).padStart(2, '0');
+          document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+          document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+          document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
+
+        const interval = setInterval(updateCountdown, 1000);
+        updateCountdown();
+      }
+
+      const targetDate = new Date();
+      targetDate.setDate(targetDate.getDate() + 7);
+
+      startCountdown(targetDate);
+    </script>
   </body>
 </html>

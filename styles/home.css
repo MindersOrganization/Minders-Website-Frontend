@@ -109,23 +109,61 @@
       text-align: start;
   }
 }
+
+/* ---------------------- countdown ---------------------- */
+
+.countdown {
+  display: flex;
+  gap: 1.5rem;
+    justify-content: center;
+  margin: 20px;
+}
+
+.time-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 1rem 1.5rem;
+  width: 100px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-box .number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.time-box .label {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+
  /*-------------------------Hiring---------------------- */
  .Hiring-cont {
   background-color: #ffc33f;
   .Hiring {
-    margin: 5rem 0 3rem 0 ;
     background-color: #ffc33f;
-    height: 450px;
+    height: 95vh;
     background-image: url("../media/Looking.gif");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 29px 0 43px;
     .Hiring-text {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      height: 100%;
       .join-us-btn {
         background-color: white;
         border-radius: 10px;
@@ -141,3 +179,5 @@
     }
   }
 }
+
+
