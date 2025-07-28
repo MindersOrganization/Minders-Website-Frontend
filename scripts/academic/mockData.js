@@ -1,5 +1,19 @@
-// Mock data for academic resources
-// This is an array of main sections organized by academic levels
+/*
+
+{
+    name: string, // Name of the folder or file
+    type: 'folder' | 'file', // Type of the item
+    children?: Array, // Only for folders, contains nested items
+    downloadUrl?: string, // Only for files, the URL to download the file
+    link?: string, // Optional link for folders
+    notExtendable?: boolean, // Optional, if true, the folder cannot be expanded
+  }
+ */
+
+
+
+
+
 const mockAcademicData = [
     {
         name: 'Level 1',

@@ -109,7 +109,11 @@ class AcademicResourceManager {
             content += `<div class="folder-container">`;
             content += `<div class="folder-header" data-target="${folderId}">`;
             content += `<span class="folder-icon">📁</span>`;
-            content += `<span class="folder-toggle-icon">▼</span>`;
+
+            if(!folder.notExtendable) {
+                content += `<span class="folder-toggle-icon">▼</span>`;
+            }
+
             content += `<strong>${folder.name}</strong>`;
 
             // Add link icon if folder has a link
@@ -118,7 +122,8 @@ class AcademicResourceManager {
             }
 
             content += `</div>`;
-            content += `<div class="folder-content" id="${folderId}">`;
+
+                content += `<div class=${ !folder.notExtendable ? "folder-content" : ""} id="${folderId}">`;
         }
 
         if (folder.children && folder.children.length > 0) {
