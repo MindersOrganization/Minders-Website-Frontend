@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic - Minders</title>
+    <link rel="shortcut icon" href="../media/Logo.svg" type="image/x-icon" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+            integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/navbar-footer.css" />
+    <link rel="stylesheet" href="../styles/academic.css">
+    <!-- Google Adsense / Analytics tags -->
+    <script src="../scripts/sendMessage.js"></script>
+    <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4314164146709940"
+            crossorigin="anonymous"
+    ></script>
+    <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-CGGN6SSH7M"
+    ></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-CGGN6SSH7M");
+    </script>
+    <!-- for email sending using emailjs -->
+    <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "UY2FlvvGjBB4sM82U",
+            });
+        })();
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="navbar-list p-0 m-0">
+            <li class="navbar-list-item">
+                <a class="navbar-link" href="about.html">About</a>
+            </li>
+            <li class="navbar-list-item">
+                <a class="navbar-link" href="contact.html">Contact</a>
+            </li>
+            <li class="navbar-list-item">
+                <a class="navbar-link" href="legacy.html">Legacy</a>
+            </li>
+            <li>
+                <a href="../index.html">
+                    <div class="navbar-logo-container">
+                        <img
+                                class="navbar-logo"
+                                src="../media/Minders Yellow.png"
+                                alt="" />
+                    </div>
+                </a>
+            </li>
+            <li class="navbar-list-item">
+                <a class="navbar-link" href="event-list.html">Events</a>
+            </li>
+            <li class="navbar-list-item">
+                <a class="navbar-link" href="coming-soon.html">Academic</a>
+            </li>
+            <li class="navbar-list-item">
+                <a class="navbar-link" href="coming-soon.html">Magazine</a>
+            </li>
+            <li class="hamburger-icon-list">
+                <button class="hamburger-icon-button">
+                    <div class="hamburger-icon-container hamburger-icon"></div>
+                </button>
+            </li>
+        </ul>
+        <div class="mobile-menu pt-5 pb-5" style="visibility: hidden">
+            <ul class="navbar-list-mobile ps-0 pt-5 pb-5 pe-0 m-0">
+                <li class="navbar-list-item-mobile">
+                    <a class="navbar-link " href="../index.html">Home</a>
+                </li>
+                <li class="navbar-list-item-mobile">
+                    <a class="navbar-link" href="about.html">About</a>
+                </li>
+                <li class="navbar-list-item-mobile">
+                    <a class="navbar-link" href="contact.html">Contact</a>
+                </li>
+                <li class="navbar-list-item-mobile">
+                    <a class="navbar-link" href="legacy.html"
+                    >Legacy</a
+                    >
+                </li>
+                <li class="navbar-list-item-mobile">
+                    <a class="navbar-link" href="event-list.html">Events</a>
+                </li>
+                <li class="navbar-list-item-mobile">
+                    <a class="navbar-link" href="coming-soon.html"
+                    >Academic</a
+                    >
+                </li>
+                <li class="navbar-list-item-mobile">
+                    <a class="navbar-link" href="coming-soon.html"
+                    >Magazine</a
+                    >
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">ACADEMIC RESOURCES</h1>
+
+            <!-- Academic Content -->
+            <div class="academic-content" id="academicContent">
+                <!-- Content will be loaded from mock data -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/logo.png" alt="Minders" class="footer-logo-img">
+                <span class="footer-brand">MINDERS</span>
+            </div>
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3>PROJECTS</h3>
+                    <a href="#">Events</a>
+                </div>
+                <div class="footer-section">
+                    <h3>ABOUT</h3>
+                    <a href="#">About Minders</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="footer-section">
+                    <h3>FOLLOW US</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🎵</a>
+                        <a href="#" class="social-link">💼</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../scripts/academic/academic.js"></script>
+    <script src="../scripts/academic/mockData.js"></script>
+</body>
+</html>
