@@ -1,14 +1,6 @@
 // Configuration for items to exclude from display
 const EXCLUDED_ITEMS = [
-    '.DS_Store',
-    'Thumbs.db',
-    '.gitignore',
-    '.git',
-    'node_modules',
-    '.vscode',
-    '.idea',
-    'temp',
-    'tmp'
+
 ];
 
 // File type icons mapping
@@ -165,6 +157,27 @@ class AcademicResourceManager {
                     icon.textContent = '▶';
                 }
             });
+        });
+
+        // Set all content areas to collapsed by default
+        this.setAllCollapsed();
+    }
+
+    setAllCollapsed() {
+        const allContent = document.querySelectorAll('.section-content, .folder-content');
+        const allHeaders = document.querySelectorAll('.section-header, .folder-header');
+        const allIcons = document.querySelectorAll('.toggle-icon, .folder-toggle-icon');
+
+        allContent.forEach(content => {
+            content.classList.add('collapsed');
+        });
+
+        allHeaders.forEach(header => {
+            header.classList.add('collapsed');
+        });
+
+        allIcons.forEach(icon => {
+            icon.textContent = '▶';
         });
     }
 }

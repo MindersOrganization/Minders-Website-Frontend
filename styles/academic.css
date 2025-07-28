@@ -84,7 +84,8 @@ body {
     background-color: #2a2a2a;
     border-radius: 15px;
     padding: 2rem;
-    min-height: 400px;
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 /* Error Message */
@@ -138,14 +139,14 @@ body {
 }
 
 .section-header.collapsed .toggle-icon {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
 }
 
 .section-content {
     padding: 1.5rem;
-    max-height: 1000px;
+    max-height: 2000px;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: max-height 0.4s ease, padding 0.3s ease;
 }
 
 .section-content.collapsed {
@@ -193,14 +194,14 @@ body {
 }
 
 .folder-header.collapsed .folder-toggle-icon {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
 }
 
 .folder-content {
     padding: 1rem;
-    max-height: 1000px;
+    max-height: 1500px;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: max-height 0.4s ease, padding 0.3s ease;
     background-color: #2a2a2a;
 }
 
@@ -290,6 +291,29 @@ body {
     margin-left: 0;
     border-left: none;
     padding-left: 0;
+}
+
+/* Custom Scrollbar Styling */
+.academic-content::-webkit-scrollbar,
+.academic-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.academic-content::-webkit-scrollbar-track,
+.academic-content::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 4px;
+}
+
+.academic-content::-webkit-scrollbar-thumb,
+.academic-content::-webkit-scrollbar-thumb {
+    background: #F4CB47;
+    border-radius: 4px;
+}
+
+.academic-content::-webkit-scrollbar-thumb:hover,
+.academic-content::-webkit-scrollbar-thumb:hover {
+    background: #E6B73A;
 }
 
 /* Responsive Design */
