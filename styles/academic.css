@@ -156,7 +156,7 @@ body {
 
 .folder-content {
     padding: 1rem;
-    max-height: 1500px;
+    max-height: 8000px;
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.3s ease;
     background-color: #2a2a2a;
