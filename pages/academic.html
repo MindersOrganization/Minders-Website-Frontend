@@ -10,42 +10,15 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
             integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg=="
             crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-    />
+            referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@100..900&display=swap"
+            rel="stylesheet" />
     <link rel="stylesheet" href="../styles/navbar-footer.css" />
-    <link rel="stylesheet" href="../styles/academic.css">
-    <!-- Google Adsense / Analytics tags -->
-    <script src="../scripts/sendMessage.js"></script>
-    <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4314164146709940"
-            crossorigin="anonymous"
-    ></script>
-    <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-CGGN6SSH7M"
-    ></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
 
-        gtag("config", "G-CGGN6SSH7M");
-    </script>
-    <!-- for email sending using emailjs -->
-    <script
-            type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "UY2FlvvGjBB4sM82U",
-            });
-        })();
-    </script>
+    <link rel="stylesheet" href="../styles/academic.css">
 
 </head>
 <body>
@@ -53,7 +26,7 @@
     <nav class="navbar">
         <ul class="navbar-list p-0 m-0">
             <li class="navbar-list-item">
-                <a class="navbar-link" href="about.html">About</a>
+                <a class="navbar-link " >About</a>
             </li>
             <li class="navbar-list-item">
                 <a class="navbar-link" href="contact.html">Contact</a>
@@ -67,8 +40,7 @@
                         <img
                                 class="navbar-logo"
                                 src="../media/Minders White.png"
-                                alt=""
-                        />
+                                alt="" />
                     </div>
                 </a>
             </li>
@@ -76,7 +48,7 @@
                 <a class="navbar-link" href="event-list.html">Events</a>
             </li>
             <li class="navbar-list-item">
-                <a class="navbar-link" href="academic.html">Academic</a>
+                <a class="navbar-link active" href="academic.html">Academic</a>
             </li>
             <li class="navbar-list-item">
                 <a class="navbar-link" href="coming-soon.html">Magazine</a>
@@ -90,16 +62,16 @@
         <div class="mobile-menu pt-5 pb-5" style="visibility: hidden">
             <ul class="navbar-list-mobile ps-0 pt-5 pb-5 pe-0 m-0">
                 <li class="navbar-list-item-mobile">
-                    <a class="navbar-link " href="../index.html">Home</a>
+                    <a class="navbar-link" href="../index.html">Home</a>
                 </li>
                 <li class="navbar-list-item-mobile">
-                    <a class="navbar-link" href="about.html">About</a>
+                    <a class="navbar-link " href="about.html">About</a>
                 </li>
                 <li class="navbar-list-item-mobile">
                     <a class="navbar-link" href="contact.html">Contact</a>
                 </li>
                 <li class="navbar-list-item-mobile">
-                    <a class="navbar-link" href="legacy.html"
+                    <a class="navbar-link " href="coming-soon.html"
                     >Legacy</a
                     >
                 </li>
@@ -107,19 +79,18 @@
                     <a class="navbar-link" href="event-list.html">Events</a>
                 </li>
                 <li class="navbar-list-item-mobile">
-                    <a class="navbar-link" href="academic.html"
+                    <a class="navbar-link active" href="academic.html"
                     >Academic</a
                     >
                 </li>
                 <li class="navbar-list-item-mobile">
-                    <a class="navbar-link" href="coming-soon.html"
+                    <a class="navbar-link " href="coming-soon.html"
                     >Magazine</a
                     >
                 </li>
             </ul>
         </div>
     </nav>
-
     <!-- Main Content -->
     <!-- Main Content -->
     <main class="main-content">
@@ -134,31 +105,55 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="/logo.png" alt="Minders" class="footer-logo-img">
-                <span class="footer-brand">MINDERS</span>
+    <footer class="pt-5 pb-5">
+        <img src="../media/Vertical White.png" class="footer-logo" alt="" />
+        <div class="footer-projects-section mt-4">
+            <h2 class="footer-title">Projects</h2>
+            <div class="footer-list-wrapper">
+                <a class="footer-link" href="../pages/event-list.html">Events</a>
             </div>
-            <div class="footer-sections">
-                <div class="footer-section">
-                    <h3>PROJECTS</h3>
-                    <a href="#">Events</a>
-                </div>
-                <div class="footer-section">
-                    <h3>ABOUT</h3>
-                    <a href="#">About Minders</a>
-                    <a href="#">Contact Us</a>
-                </div>
-                <div class="footer-section">
-                    <h3>FOLLOW US</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link">📘</a>
-                        <a href="#" class="social-link">📷</a>
-                        <a href="#" class="social-link">🎵</a>
-                        <a href="#" class="social-link">💼</a>
-                        <a href="#" class="social-link">🐦</a>
-                    </div>
+        </div>
+        <div class="footer-about-section mt-4">
+            <h2 class="footer-title">About</h2>
+            <div class="footer-list-wrapper">
+                <a class="footer-link" href="../pages/about.html">About Minders</a>
+                <a class="footer-link" href="../pages/contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-follow-section mt-4">
+            <h2 class="footer-title m-3">Follow Us</h2>
+            <div class="footer-list-wrapper">
+                <div class="follow-us-container">
+                    <a
+                            class="social-media-icon"
+                            href="https://www.facebook.com/MindersORG"
+                            target="_blank">
+                        <div class="icon-container facebook-icon"></div>
+                    </a>
+                    <a
+                            class="social-media-icon"
+                            href="https://www.instagram.com/mindersorg/"
+                            target="_blank">
+                        <div class="icon-container instagram-icon"></div>
+                    </a>
+                    <a
+                            class="social-media-icon"
+                            href="https://www.tiktok.com/@minders.org"
+                            target="_blank">
+                        <div class="icon-container tiktok-icon"></div>
+                    </a>
+                    <a
+                            class="social-media-icon"
+                            href="https://www.linkedin.com/company/minders/"
+                            target="_blank">
+                        <div class="icon-container linkedin-icon"></div>
+                    </a>
+                    <a
+                            class="social-media-icon"
+                            href="https://twitter.com/mindersorg"
+                            target="_blank">
+                        <div class="icon-container twitter-icon"></div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -172,8 +167,7 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"
             integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w=="
             crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-    ></script>
+            referrerpolicy="no-referrer"></script>
     <script type="module" src="../scripts/displayMobileNavbar.js"></script>
 
 </body>
