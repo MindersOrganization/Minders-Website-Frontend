@@ -437,30 +437,25 @@ const mockAcademicData = [
                                 ]
                             }
                         ]
-                    }
+                    },
+                    {
+                        name: "Algorithm",
+                        type: 'folder',
+                        link:"https://drive.google.com/drive/folders/1HGqoHDFy5-GSzqakOggJqTtheacP5Th5",
+                        notExtendable: true,
+                    },
+                    {
+                        name: "IS",
+                        type: 'folder',
+                        link:"https://drive.google.com/drive/folders/1OjyRywzo4qsNlhUJB96j1NjcRBTJnCCK",
+                        notExtendable: true,
+
+                    },
                 ]
             }
         ]
     },
-    {
-        name:"Year 3",
-        type:"folder",
-        children: [
-            {
-                name: "Algorithm",
-                type: 'folder',
-                link:"https://drive.google.com/drive/folders/1HGqoHDFy5-GSzqakOggJqTtheacP5Th5",
-                notExtendable: true,
-            },
-            {
-                name: "IS",
-                type: 'folder',
-                link:"https://drive.google.com/drive/folders/1OjyRywzo4qsNlhUJB96j1NjcRBTJnCCK",
-                notExtendable: true,
 
-            },
-        ]
-    }
 ];
 
 // Export the data for use in other files
