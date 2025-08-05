@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post</title>
+    <link rel="shortcut icon" href="../../media/Logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../styles/newFooter.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Google Adsense / Analytics tags -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4314164146709940"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CGGN6SSH7M"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CGGN6SSH7M");
+    </script>
+  </head>
+  <body class="font-sans bg-black">
+    <!-- section 1  -->
+    <section
+      class="w-full pt-8 bg-[image:linear-gradient(to_bottom,var(--color-yellow-minders)_0%,var(--color-yellow-minders)_40%,black_0%,black_100%)]"
+    >
+      <!-- Navbar -->
+      <nav
+        class="bg-black relative mb-7 lg:mx-25 md:mx-15 sm:mx-10 mx-5 rounded-4xl"
+      >
+        <div class="w-full px-5 sm:px-15">
+          <div class="flex justify-between h-14 items-center">
+            <!-- Logo Image -->
+            <div class="flex items-center space-x-2">
+              <img src="../../media/Logo.svg" alt="Logo" class="h-13 w-auto" />
+              <!-- Optional text next to logo -->
+              <span
+                class="text-base sm:text-xl font-medium text-[var(--color-yellow-minders)]"
+                >MINDERS</span
+              >
+            </div>
+
+            <!-- hamburger icon -->
+            <div>
+              <button
+                id="menu-toggle"
+                class="text-[var(--color-yellow-minders)] cursor-pointer"
+              >
+                <svg
+                  id="icon-hamburger"
+                  class="w-6 h-6 block"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M8 6h15M2 12h20M2 18h12" />
+                </svg>
+                <!-- close icon -->
+                <svg
+                  id="icon-close"
+                  class="w-6 h-6 hidden"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- menu -->
+        <div
+          id="menu"
+          class="hidden absolute font-abril sm:right-1/20 right-1/12 px-3 pb-4 sm:px-5 rounded-b-2xl w-fit bg-[#646464] z-10"
+        >
+          <a
+            href="../../index.html"
+            class="block py-2 text-white hover:text-[var(--color-yellow-minders)]"
+            >Home</a
+          >
+          <a
+            href="../about.html"
+            class="block py-2 text-white hover:text-[var(--color-yellow-minders)]"
+            >About us</a
+          >
+          <a
+            href="../event-list.html"
+            class="block py-2 text-white hover:text-[var(--color-yellow-minders)]"
+            >Latest events</a
+          >
+          <a
+            href="../coming-soon.html"
+            class="block py-2 text-white hover:text-[var(--color-yellow-minders)]"
+            >Partners & Sponsors</a
+          >
+          <a
+            href="./Magazine.html"
+            class="block py-2 text-white hover:text-[var(--color-yellow-minders)]"
+            >Magazine</a
+          >
+          <a
+            href="../academic.html"
+            class="block py-2 text-white hover:text-[var(--color-yellow-minders)]"
+            >Academic</a
+          >
+          <a
+            href="../legacy.html"
+            class="block py-2 text-white hover:text-[var(--color-yellow-minders)]"
+            >Legacy</a
+          >
+          <a
+            href="../contact.html"
+            class="block py-2 text-white hover:text-[var(--color-yellow-minders)]"
+            >Contact us</a
+          >
+        </div>
+      </nav>
+
+      <img
+        src="../../media/bi--pin.png"
+        alt=""
+        class="absolute lg:w-1/12 w-2/17 lg:right-18 lg:top-40 md:right-11 md:top-30 right-5 top-25 rotate-45"
+      />
+
+      <div
+        class="bg-[#D9D9D9] lg:m-25 md:m-15 sm:px-15 sm:py-10 sm:m-10 m-7 p-5 shadow-[0_4px_40px_20px_rgba(0,0,0,0.25)]"
+      >
+        <a href="./Volume.html" class="cursor-pointer inline-block">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="md:w-1/4 sm:w-1/5 w-2/11 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)] -left-4.5 relative"
+          >
+            <path
+              fill="#000"
+              d="M17 13H8.75L12 16.25l-.66.75l-4.5-4.5l4.5-4.5l.66.75L8.75 12H17zm-15-.5A9.5 9.5 0 0 1 11.5 3a9.5 9.5 0 0 1 9.5 9.5a9.5 9.5 0 0 1-9.5 9.5A9.5 9.5 0 0 1 2 12.5m1 0a8.5 8.5 0 0 0 8.5 8.5a8.5 8.5 0 0 0 8.5-8.5A8.5 8.5 0 0 0 11.5 4A8.5 8.5 0 0 0 3 12.5"
+            />
+          </svg>
+        </a>
+        <!-- post content -->
+        <div class="flex flex-col items-start">
+          <!-- image and post details -->
+          <div class="flex items-end py-2.5">
+            <img
+              id="post-image"
+              src=""
+              class="md:w-3xs lg:w-xs w-[50%]"
+              alt="poster image"
+            />
+            <div class="flex flex-col ml-5">
+              <span
+                id="post-author"
+                class="italic font-sans lg:text-lg font-light sm:text-base text-sm"
+                >Author /</span
+              >
+              <span
+                id="post-date"
+                class="italic font-sans lg:text-lg font-light sm:text-base text-sm"
+                >Date /</span
+              >
+              <span
+                id="post-eTime"
+                class="italic font-sans lg:text-lg font-light sm:text-base text-sm"
+                >Time to finish /</span
+              >
+            </div>
+          </div>
+          <!-- post content -->
+          <div class="h-[90vh] custom-scrollbar overflow-auto pr-9">
+            <h1
+              dir="rtl"
+              id="post-title"
+              class="palestine-font italic font-bold lg:text-5xl sm:text-4xl text-3xl mb-9"
+            ></h1>
+            <p
+              dir="rtl"
+              class="palestine-font md:text-xl text-lg"
+              id="post-content"
+            ></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- popular posts section -->
+    <section
+      class="sm:m-20 m-5 relative text-white lg:mx-25 md:mx-15 sm:mx-10 mx-5"
+    >
+      <h1 class="font-abril m-7 lg:text-5xl sm:text-4xl text-3xl">
+        Popular Posts
+      </h1>
+      <!-- popular posts -->
+      <div class="flex flex-col items-center justify-center" id="p-container">
+        <!-- post content -->
+      </div>
+    </section>
+
+    <!---------------------Footer------------------------->
+    <footer class="pt-9 pb-9">
+      <img src="../../media/Vertical White.png" class="footer-logo" alt="" />
+      <div class="footer-projects-section mt-6">
+        <h2 class="footer-title">Projects</h2>
+        <div class="footer-list-wrapper">
+          <a class="footer-link" href="../event-list.html">Events</a>
+        </div>
+      </div>
+      <div class="footer-about-section mt-6">
+        <h2 class="footer-title">About</h2>
+        <div class="footer-list-wrapper">
+          <a class="footer-link" href="../about.html">About Minders</a>
+          <a class="footer-link" href="../contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-follow-section mt-6">
+        <h2 class="footer-title m-3">Follow Us</h2>
+        <div class="footer-list-wrapper">
+          <div class="follow-us-container">
+            <a
+              class="social-media-icon"
+              href="https://www.facebook.com/MindersORG"
+              target="_blank"
+            >
+              <div class="icon-container facebook-icon"></div>
+            </a>
+            <a
+              class="social-media-icon"
+              href="https://www.instagram.com/mindersorg/"
+              target="_blank"
+            >
+              <div class="icon-container instagram-icon"></div>
+            </a>
+
+            <a
+              class="social-media-icon"
+              href="https://www.tiktok.com/@minders.org"
+              target="_blank"
+            >
+              <div class="icon-container tiktok-icon"></div>
+            </a>
+            <a
+              class="social-media-icon"
+              href="https://www.linkedin.com/company/minders/"
+              target="_blank"
+            >
+              <div class="icon-container linkedin-icon"></div>
+            </a>
+            <a
+              class="social-media-icon"
+              href="https://twitter.com/mindersorg"
+              target="_blank"
+            >
+              <div class="icon-container twitter-icon"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../scripts/magazine/volume.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const id = new URLSearchParams(window.location.search).get("id");
+        const article = window.articles.find((a) => a.id === id);
+
+        if (!article) {
+          document.getElementById("post-content").innerHTML =
+            "<p>المقال غير موجود.</p>";
+          return;
+        }
+
+        document.getElementById(
+          "post-image"
+        ).src = `../../media/${article.imageId}`;
+        document.getElementById("post-title").textContent = article.title;
+        document.getElementById("post-content").innerHTML = article.fullContent;
+        document.getElementById(
+          "post-date"
+        ).textContent = `Date / ${article.date}`;
+        document.getElementById(
+          "post-author"
+        ).innerHTML = `Author / ${article.author}`;
+        document.getElementById(
+          "post-eTime"
+        ).innerHTML = `Time to finish / ${article.eTime}`;
+        const content = document.getElementById("p-container");
+        content.innerHTML = window.articles
+          .slice(0, 2)
+          .map((e) => {
+            if (e.id != article.id) {
+              const isrc = `../../media/${e.imageId}`;
+              return `<div class="text-center cursor-pointer w-[30%] m-5 block" onclick="openArticle('${e.id}')">
+          
+              <img id="p-image" class="m-3" src="${isrc}" alt="${e.title}" />
+          
+          <h1 class="palestine-font sm:text-3xl text-lg" id="p-title">${e.title}</h1>
+        </div>`;
+            }
+          })
+          .join("");
+      });
+    </script>
+    <script src="../../scripts/magazine/articles.js"></script>
+    <script src="../../scripts/magazine/articleRender.js"></script>
+  </body>
+</html>

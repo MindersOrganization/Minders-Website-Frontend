@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volume</title>
+    <link rel="shortcut icon" href="../../media/Logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../styles/newFooter.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Google Adsense / Analytics tags -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4314164146709940"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CGGN6SSH7M"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CGGN6SSH7M");
+    </script>
+  </head>
+  <body onload="renderAllArticles()">
+    <section class="text-white bg-black">
+      <div
+        class="bg-[url(../../media/announce_magazine.png)] bg-no-repeat bg-cover bg-center md:h-[40vh] h-[30vh] w-full"
+      >
+        <a href="./Magazine.html" class="cursor-pointer inline-block">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="md:w-1/5 sm:w-1/6 w-1/7 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)] m-[9%] relative"
+          >
+            <path
+              fill="#d9c194"
+              d="M17 13H8.75L12 16.25l-.66.75l-4.5-4.5l4.5-4.5l.66.75L8.75 12H17zm-15-.5A9.5 9.5 0 0 1 11.5 3a9.5 9.5 0 0 1 9.5 9.5a9.5 9.5 0 0 1-9.5 9.5A9.5 9.5 0 0 1 2 12.5m1 0a8.5 8.5 0 0 0 8.5 8.5a8.5 8.5 0 0 0 8.5-8.5A8.5 8.5 0 0 0 11.5 4A8.5 8.5 0 0 0 3 12.5"
+            />
+          </svg>
+        </a>
+      </div>
+      <!-- posts  -->
+
+      <div
+        id="articlesContainer"
+        class="flex flex-col bg-black lg:p-20 md:p-15 sm:p-10 p-5"
+      >
+        <!-- <div
+          class="my-7 mx-5 flex sm:flex-row flex-col items-center justify-evenly"
+        >
+          <img
+            src="../../media/على عتبة الوداع الأخير.jpg"
+            class="sm:h-[40vh] h-[35vh] sm:my-0 my-2"
+            alt=""
+          />
+          text div
+          <div
+            class="h-[100%] flex flex-col sm:ml-5 justify-around sm:items-end items-center"
+          >
+            <h1
+              class="font-sans sm:text-3xl text-xl font-bold palestine-font sm:text-start text-center"
+              dir="rtl"
+            >
+              على عتبة الوداع الأخير
+            </h1>
+
+            <p
+              class="sm:text-base text-2xs sm:text-start text-center my-2 palestine-font"
+              dir="rtl"
+            >
+              تحمل الوحدة في طياتها الكثير من المعاني، يجد أحدهم فيها الهدوء
+              والبعض الآخر يكون نصيبه الوِحشة، فعندما تخرج على المسرح لا يُصفق
+              لك أحدٌ، وعندما تمرض فتجد اليد الوحيدة التي وتكون اليد الوحيدة
+              التي تمسح عن وجهك القلق... هي يدك،. تُدرك حينها أن هذا هو نصيبك من
+              الوحدة.
+            </p>
+
+            buttons
+            <div class="text-center w-[100%] items-center text-black my-5">
+              <button
+                class="cursor-pointer sm:text-base text-2xs font-abril rounded-2xl sm:mr-3.5 mr-2 md:px-10 px-6 py-1 bg-[var(--color-yellow-minders)] hover:drop-shadow-[0px_7px_4px_rgba(255,255,255,0.35)]"
+              >
+                Read
+              </button>
+              <button
+                class="cursor-pointer sm:text-base text-2xs font-abril rounded-2xl md:px-7 px-3 py-1 bg-[var(--color-yellow-minders)] hover:drop-shadow-[0px_7px_4px_rgba(255,255,255,0.35)]"
+              >
+                Save me
+              </button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <!---------------------Footer------------------------->
+
+    <footer class="pt-9 pb-9">
+      <img src="../../media/Vertical White.png" class="footer-logo" alt="" />
+      <div class="footer-projects-section mt-6">
+        <h2 class="footer-title">Projects</h2>
+        <div class="footer-list-wrapper">
+          <a class="footer-link" href="../event-list.html">Events</a>
+        </div>
+      </div>
+      <div class="footer-about-section mt-6">
+        <h2 class="footer-title">About</h2>
+        <div class="footer-list-wrapper">
+          <a class="footer-link" href="../about.html">About Minders</a>
+          <a class="footer-link" href="../contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-follow-section mt-6">
+        <h2 class="footer-title m-3">Follow Us</h2>
+        <div class="footer-list-wrapper">
+          <div class="follow-us-container">
+            <a
+              class="social-media-icon"
+              href="https://www.facebook.com/MindersORG"
+              target="_blank"
+            >
+              <div class="icon-container facebook-icon"></div>
+            </a>
+            <a
+              class="social-media-icon"
+              href="https://www.instagram.com/mindersorg/"
+              target="_blank"
+            >
+              <div class="icon-container instagram-icon"></div>
+            </a>
+
+            <a
+              class="social-media-icon"
+              href="https://www.tiktok.com/@minders.org"
+              target="_blank"
+            >
+              <div class="icon-container tiktok-icon"></div>
+            </a>
+            <a
+              class="social-media-icon"
+              href="https://www.linkedin.com/company/minders/"
+              target="_blank"
+            >
+              <div class="icon-container linkedin-icon"></div>
+            </a>
+            <a
+              class="social-media-icon"
+              href="https://twitter.com/mindersorg"
+              target="_blank"
+            >
+              <div class="icon-container twitter-icon"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../scripts/magazine/articleRender.js"></script>
+    <script src="../../scripts/magazine/articles.js"></script>
+  </body>
+</html>
