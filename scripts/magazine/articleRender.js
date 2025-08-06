@@ -26,8 +26,8 @@ function renderArticleCard(article) {
           </button>
 
           <a href="${article.downloadUrl}" target="_blank" download>
-            <button class="cursor-pointer sm:text-base text-2xs font-abril rounded-2xl md:px-7 px-3 py-1 bg-[var(--color-yellow-minders)] hover:drop-shadow-[0px_7px_4px_rgba(255,255,255,0.35)]">
-              Save me
+            <button class="cursor-pointer sm:text-base text-2xs font-abril rounded-2xl sm:mr-3.5 mr-2 md:px-10 px-6 py-1 bg-[var(--color-yellow-minders)] hover:drop-shadow-[0px_7px_4px_rgba(255,255,255,0.35)]">
+              Save
             </button>
           </a>
         </div>

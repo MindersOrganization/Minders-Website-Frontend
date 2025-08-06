@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
     "post-author"
   ).innerHTML = `Author / ${article.author}`;
   document.getElementById(
+    "post-reviewer"
+  ).innerHTML = `Linguistic Reviewer / ${article.author}`;
+  document.getElementById(
     "post-eTime"
   ).innerHTML = `Time to finish / ${article.eTime}`;
   const content = document.getElementById("p-container");
