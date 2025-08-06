@@ -4,7 +4,7 @@ function renderAllArticles() {
 }
 
 function renderArticleCard(article) {
-  const imgSrc = `../../media/${article.imageId}`;
+  const imgSrc = `/media/${article.imageId}`;
 
   return `
     <div class="my-7 mx-5 flex sm:flex-row flex-col items-center justify-evenly">

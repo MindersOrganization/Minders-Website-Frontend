@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  document.getElementById("post-image").src = `../../media/${article.imageId}`;
+  document.getElementById("post-image").src = `/media/${article.imageId}`;
   document.getElementById("post-title").textContent = article.title;
   document.getElementById("post-content").innerHTML = article.fullContent;
   document.getElementById("post-date").textContent = `Date / ${article.date}`;
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .slice(0, 2)
     .map((e) => {
       if (e.id != article.id) {
-        const isrc = `../../media/${e.imageId}`;
+        const isrc = `/media/${e.imageId}`;
         return `<div class="text-center cursor-pointer w-[30%] m-5 block" onclick="openArticle('${e.id}')">
           
               <img id="p-image" class="m-3" src="${isrc}" alt="${e.title}" />
