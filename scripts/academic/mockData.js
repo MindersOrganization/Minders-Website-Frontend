@@ -73,82 +73,6 @@ const mockAcademicData = [
                         children: [
 
                             {
-                                name: 'Lectures',
-                                type: 'folder',
-                                children: [
-                                    {
-                                        name: 'Full course old slides.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/1_Ew0jiAtaUjkN0w6BgHnboVkXA0TyGPk/view'
-                                    },
-                                    {
-                                        name: 'Hypothesis-1.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/16b1-WBruPBWEJApixyQrfZyL4To4wWNY/view'
-                                    },
-                                    {
-                                        name: 'Hypothesis-2.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/1ZGeh4n8dmUpkp9BGHxh_DH55_5j0_X2D/view'
-                                    },
-                                    {
-                                        name: 'Hypothesis-3.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/1HoQrf59RL9jivVf91YuvUjcaHCLTyVye/view'
-                                    },
-                                    {
-                                        name: 'Hypothesis Testing Examples.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/1j2Fiw3nIsziicikT4dIuA5hFhLoGdDyE/view'
-                                    },
-                                    {
-                                        name: 'Interval Estimate Examples.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/1wcb7TMNI7tv1DtY9mIChnK_46JdCySiA/view'
-                                    },
-                                    {
-                                        name: 'Lecture 1&2.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/1CK8T8GwT7bS0W7Qv8eBv9d-xB0RnH4N-/view'
-                                    },
-                                    {
-                                        name: 'Lecture 3&4.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/1gGCQouL0aIeOfNEmRgGm7EB5Gw9SsV46/view'
-                                    },
-                                    {
-                                        name: 'Lecture 5&6.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/19wMQWfB51xFBbxjyK8JlQIhO0KQtkF8v/view'
-                                    },
-                                    {
-                                        name: 'Lecture 7&8.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/1gYm3xGtVqIMAIeeFGMp5JxWQ3FwOQeg2/view'
-                                    },
-                                    {
-                                        name: 'Lecture 9&10(1).pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/1TDzQsWfbuCQaignydoPcntMWeRMFrJMf/view'
-                                    },
-                                    {
-                                        name: 'Lecture 11&12(1).pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/15gbKMPKUxbdtjq904m8-gOn0z2lvRbVU/view'
-                                    },
-                                    {
-                                        name: 'Lecture 13&14(the last).pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/1YMZIc38BrM32HN0DdDN68xiNTTBcMZlb/view'
-                                    },
-                                    {
-                                        name: 'Statistical Tables.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/12k05-QVWB5cYDF2x9lAPkg_EJ1wVgKPT/view'
-                                    }
-                                ]
-                            },
-                            {
                                 name: 'Stat 2 Summary',
                                 type: 'folder',
                                 children: [
@@ -293,6 +217,38 @@ const mockAcademicData = [
                         ]
                     }
                 ]
+            },
+            {
+                name: " Term 2",
+                type: 'folder',
+                children: [
+                    {
+                        name: "Management",
+                        type: 'folder',
+                        children: [
+                            {
+                                name: 'Chapter 3.pdf',
+                                type: 'file',
+                                downloadUrl: 'https://drive.google.com/file/d/1XlTgkU7DdaqHWR8gxedQ3Epuba8M1Zkm/view'
+                            },
+                            {
+                                name: 'Chapter 15.pdf',
+                                type: 'file',
+                                downloadUrl: 'https://drive.google.com/file/d/1KYGFDg26zmLsjY3RLxdHG2gZA7EutzJ1/view'
+                            },
+                            {
+                                name: 'Chapter 18.pdf',
+                                type: 'file',
+                                downloadUrl: 'https://drive.google.com/file/d/1gAUFwe7NulyRtetDQN3ST26woODMAhkS/view'
+                            },
+                            {
+                                name: 'Chapter 21.pdf',
+                                type: 'file',
+                                downloadUrl: 'https://drive.google.com/file/d/1HzRG3N9dU6eMhoG2-Ng4fw_dSOyaq03h/view'
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
@@ -359,45 +315,16 @@ const mockAcademicData = [
                                         name: 'Files Lectures Summary Part1.pdf',
                                         type: 'file',
                                         downloadUrl: 'https://drive.google.com/file/d/1hTgiN0eT5sYwOrxS7X3Fuib1AL-bHY3g/view'
-                                    }
+                                    },
                                 ]
                             },
                             {
-                                name: 'OS',
+                                name: "Database-2",
                                 type: 'folder',
-                                children: [
-                                    {
-                                        name: 'OS chapter two-converted.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/1guQRfRCRzZs53wnRgHRdaytaiyWkrT8i/view'
-                                    },
-                                    {
-                                        name: 'OS Chapter 6.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/1jV1gNbE-nQeZNSuUXaUkx66AKMEArC3q/view'
-                                    },
-                                    {
-                                        name: 'OS Chapter 8.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/1smtgWISqTQ3ADig-J-WjCA5BLMXqFYY8/view'
-                                    },
-                                    {
-                                        name: 'OS Chapter 9 Summary.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/1XSuCRSurAtsCwoxOT0tQADlu0LWq22go/view'
-                                    },
-                                    {
-                                        name: 'OS chapter one 1.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/1ZD70-lEDK1rdCdgZjgRXTiggh25rzkGe/view'
-                                    },
-                                    {
-                                        name: 'OS Summary 3&5.pdf',
-                                        type: 'file',
-                                        downloadUrl: 'https://drive.google.com/file/d/1oPZhfc0PGdyr9_2w7XSGJH_tSJdXL9Ih/view'
-                                    }
-                                ]
-                            }
+                                link:"https://drive.google.com/drive/folders/1XLLtCTz8q3JaEnRXuslmnUstSNKNzOw1",
+                                notExtendable: true,
+
+                            },
                         ]
                     },
                     {
@@ -439,17 +366,46 @@ const mockAcademicData = [
                         ]
                     },
                     {
-                        name: "Algorithm",
+                        name: 'OS',
                         type: 'folder',
-                        link:"https://drive.google.com/drive/folders/1HGqoHDFy5-GSzqakOggJqTtheacP5Th5",
-                        notExtendable: true,
+                        children: [
+                            {
+                                name: 'OS chapter two-converted.pdf',
+                                type: 'file',
+                                downloadUrl: 'https://drive.google.com/file/d/1guQRfRCRzZs53wnRgHRdaytaiyWkrT8i/view'
+                            },
+                            {
+                                name: 'OS Chapter 6.pdf',
+                                type: 'file',
+                                downloadUrl: 'https://drive.google.com/file/d/1jV1gNbE-nQeZNSuUXaUkx66AKMEArC3q/view'
+                            },
+                            {
+                                name: 'OS Chapter 8.pdf',
+                                type: 'file',
+                                downloadUrl: 'https://drive.google.com/file/d/1smtgWISqTQ3ADig-J-WjCA5BLMXqFYY8/view'
+                            },
+                            {
+                                name: 'OS Chapter 9 Summary.pdf',
+                                type: 'file',
+                                downloadUrl: 'https://drive.google.com/file/d/1XSuCRSurAtsCwoxOT0tQADlu0LWq22go/view'
+                            },
+                            {
+                                name: 'OS chapter one 1.pdf',
+                                type: 'file',
+                                downloadUrl: 'https://drive.google.com/file/d/1ZD70-lEDK1rdCdgZjgRXTiggh25rzkGe/view'
+                            },
+                            {
+                                name: 'OS Summary 3&5.pdf',
+                                type: 'file',
+                                downloadUrl: 'https://drive.google.com/file/d/1oPZhfc0PGdyr9_2w7XSGJH_tSJdXL9Ih/view'
+                            }
+                        ]
                     },
                     {
-                        name: "IS",
+                        name: "Algorithms Summaries",
                         type: 'folder',
-                        link:"https://drive.google.com/drive/folders/1OjyRywzo4qsNlhUJB96j1NjcRBTJnCCK",
+                        link:"https://drive.google.com/drive/folders/1Jqw-3ll7-PD70o5jQG3kfwESGNtW8I0M",
                         notExtendable: true,
-
                     },
                 ]
             }
