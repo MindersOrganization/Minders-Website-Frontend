@@ -1,93 +1,37 @@
-@import "./global.css";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
-.footer-list-title,
-.navbar-link {
+:root {
+  --minders-yellow: #efc318;
+  --minders-black: #252525;
+  --minders-white: #f1f1f1;
+
+  /* EVENT STATUS TAGS */
+  --finished-dark: #2c3bbe;
+  --finished-light: #a0aaff;
+  --ongoing-dark: #05ff00;
+  --ongoing-light: #b2ffa6;
+  --upcoming-dark: #fff500;
+  --upcoming-light: #fdff8a;
+  --sold-out-dark: #ff0000;
+  --sold-out-light: #ffa6a6;
+  --postponed-dark: #575857;
+  --postponed-light: #b2b5b2;
+}
+.footer-list-title {
   font-family: "Bebas Neue", cursive;
 }
 
-.navbar {
-  background-color: black !important;
-  position: sticky;
-  top: 0;
-  z-index: 5;
-  height: 60px;
-}
-
-.navbar-list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 45px;
-  list-style-type: none;
-}
-
-.navbar-list-item {
-  text-align: center;
-  width: 75px;
-}
-
-.navbar-link {
-  text-decoration: none;
-  color: white;
-  font-size: x-large;
-}
-
-.navbar-link:hover {
-  color: var(--minders-yellow);
-  text-decoration: none;
-}
-
-.navbar-logo {
-  width: 90px;
-}
-
-.navbar-logo-container {
-  background-color: black;
-  border-radius: 100%;
-  transform: translateY(25px);
-  width: 100px;
-  height: 100px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.navbar-list-mobile {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.mobile-menu {
-  background-color: black;
-  text-align: center;
-  visibility: hidden;
-  width: 100%;
-}
-
-.hamburger-icon-container {
-  width: 40px;
-  height: 40px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.hamburger-icon-list {
-  display: none;
-  width: 40px;
-  height: 40px;
-}
-
-.hamburger-icon-button {
-  background-color: black;
-  border: 0;
-}
-
 footer {
+  h1 {
+    font-size: 48px;
+  }
+  h1,
+  h2 {
+    font-family: "Bebas Neue", cursive;
+  }
+
+  font-family: "Roboto", sans-serif;
   background-color: black;
   height: fit-content;
   display: flex;
@@ -177,14 +121,6 @@ footer {
   background-image: url("../media/email-icon.svg");
 }
 
-.hamburger-icon {
-  background-image: url("../media/icons8-menu-squared-100.png");
-}
-
-h1 {
-  font-size: 48px;
-}
-
 .active {
   color: var(--minders-yellow);
 }
@@ -197,17 +133,6 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
-  .hamburger-icon-list {
-    display: inline;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-  }
-
-  .navbar-list-item {
-    display: none;
-  }
-
   footer {
     flex-direction: column;
     align-items: center;
@@ -219,4 +144,10 @@ h1 {
     width: 150px;
     text-align: center;
   }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

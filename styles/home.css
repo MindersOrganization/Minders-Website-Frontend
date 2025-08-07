@@ -113,7 +113,6 @@
   .card-body-container {
     text-align: start;
   }
-
 }
 
 /* ---------------------- countdown ---------------------- */
@@ -139,14 +138,14 @@
 }
 
 .time-box .number {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-size: 2rem;
   font-weight: bold;
   color: #333;
 }
 
 .time-box .label {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-size: 1rem;
   color: #555;
   margin-top: 0.5rem;
@@ -154,7 +153,7 @@
 
 @media screen and (max-width: 600px) {
   .time-box {
-      width: 60px;
+    width: 60px;
   }
 }
 
@@ -191,7 +190,8 @@
         }
 
         &:hover {
-          box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+          box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1),
+            0 1px 3px rgba(0, 0, 0, 0.06);
         }
       }
     }

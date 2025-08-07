@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magazine</title>
+    <link rel="shortcut icon" href="../../media/Logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../styles/newFooter.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Google Adsense / Analytics tags -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4314164146709940"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CGGN6SSH7M"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CGGN6SSH7M");
+    </script>
+  </head>
+  <body class="font-sans bg-black">
+    <!-- section 1  -->
+    <section class="w-full bg-[var(--color-yellow-minders)] pt-8 mb-[-1px]">
+      <!-- Navbar -->
+      <nav
+        class="bg-black relative mb-7 lg:mx-25 md:mx-15 sm:mx-10 mx-5 rounded-4xl"
+      >
+        <div class="w-full px-5 sm:px-15">
+          <div class="flex justify-between h-14 items-center">
+            <!-- Logo Image -->
+            <div class="flex items-center space-x-2">
+              <img src="../../media/Logo.svg" alt="Logo" class="h-13 w-auto" />
+              <!-- Optional text next to logo -->
+              <span
+                class="text-base sm:text-xl font-medium text-[var(--color-yellow-minders)]"
+                >MINDERS</span
+              >
+            </div>
+
+            <!-- hamburger icon -->
+            <div>
+              <button
+                id="menu-toggle"
+                class="text-[var(--color-yellow-minders)] cursor-pointer"
+              >
+                <svg
+                  id="icon-hamburger"
+                  class="w-6 h-6 block"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M8 6h15M2 12h20M2 18h12" />
+                </svg>
+                <!-- close icon -->
+                <svg
+                  id="icon-close"
+                  class="w-6 h-6 hidden"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- menu -->
+        <div
+          id="menu"
+          class="hidden absolute font-abril sm:right-1/20 right-1/12 px-3 pb-4 sm:px-5 rounded-b-2xl w-fit bg-[#646464] z-10"
+        >
+          <a
+            href="../../index.html"
+            class="block py-2 text-white hover:text-[var(--color-yellow-minders)]"
+            >Home</a
+          >
+          <a
+            href="../about.html"
+            class="block py-2 text-white hover:text-[var(--color-yellow-minders)]"
+            >About us</a
+          >
+          <a
+            href="../event-list.html"
+            class="block py-2 text-white hover:text-[var(--color-yellow-minders)]"
+            >Latest events</a
+          >
+          <a
+            href="../coming-soon.html"
+            class="block py-2 text-white hover:text-[var(--color-yellow-minders)]"
+            >Partners & Sponsors</a
+          >
+          <a
+            class="block py-2 text-white hover:text-[var(--color-yellow-minders)] active"
+            >Magazine</a
+          >
+          <a
+            href="../academic.html"
+            class="block py-2 text-white hover:text-[var(--color-yellow-minders)]"
+            >Academic</a
+          >
+          <a
+            href="../legacy.html"
+            class="block py-2 text-white hover:text-[var(--color-yellow-minders)]"
+            >Legacy</a
+          >
+          <a
+            href="../contact.html"
+            class="block py-2 text-white hover:text-[var(--color-yellow-minders)]"
+            >Contact us</a
+          >
+        </div>
+      </nav>
+
+      <div
+        class="flex flex-col justify-center items-center pb-3.5 text-black font-abril font-medium text-shadow-[0_15px_12px_rgb(0,0,0,0.25)]"
+      >
+        <span class="md:text-8xl sm:text-7xl text-6xl">Minders</span>
+        <span class="md:text-9xl sm:text-8xl text-7xl">Volumes</span>
+      </div>
+    </section>
+
+    <!-- section 2 volumes -->
+    <section
+      class="mt-0 bg-[linear-gradient(to_bottom,_var(--color-yellow-minders)_50%,_black_50%)] pb-5"
+    >
+      <div class="collection">
+        <div class="swiper">
+          <div class="swiper-wrapper lg:pt-15 lg:pb-10 pt-10 pb-5">
+            <div class="content swiper-slide">
+              <a href="./volume.html">
+                <img src="../../media/announce_magazine.png" alt="" />
+              </a>
+            </div>
+            <div class="content swiper-slide">
+              <a href="./volume.html">
+                <img src="../../media/announce_magazine.png" alt="" />
+              </a>
+            </div>
+            <div class="content swiper-slide">
+              <a href="./volume.html">
+                <img src="../../media/announce_magazine.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------Footer------------------------->
+    <footer class="pt-9 pb-9">
+      <img src="../../media/Vertical White.png" class="footer-logo" alt="" />
+      <div class="footer-projects-section mt-6">
+        <h2 class="footer-title">Projects</h2>
+        <div class="footer-list-wrapper">
+          <a class="footer-link" href="../event-list.html">Events</a>
+        </div>
+      </div>
+      <div class="footer-about-section mt-6">
+        <h2 class="footer-title">About</h2>
+        <div class="footer-list-wrapper">
+          <a class="footer-link" href="../about.html">About Minders</a>
+          <a class="footer-link" href="../contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-follow-section mt-6">
+        <h2 class="footer-title m-3">Follow Us</h2>
+        <div class="footer-list-wrapper">
+          <div class="follow-us-container">
+            <a
+              class="social-media-icon"
+              href="https://www.facebook.com/MindersORG"
+              target="_blank"
+            >
+              <div class="icon-container facebook-icon"></div>
+            </a>
+            <a
+              class="social-media-icon"
+              href="https://www.instagram.com/mindersorg/"
+              target="_blank"
+            >
+              <div class="icon-container instagram-icon"></div>
+            </a>
+
+            <a
+              class="social-media-icon"
+              href="https://www.tiktok.com/@minders.org"
+              target="_blank"
+            >
+              <div class="icon-container tiktok-icon"></div>
+            </a>
+            <a
+              class="social-media-icon"
+              href="https://www.linkedin.com/company/minders/"
+              target="_blank"
+            >
+              <div class="icon-container linkedin-icon"></div>
+            </a>
+            <a
+              class="social-media-icon"
+              href="https://twitter.com/mindersorg"
+              target="_blank"
+            >
+              <div class="icon-container twitter-icon"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../../scripts/magazine/newNav.js"></script>
+  </body>
+</html>
